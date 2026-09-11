@@ -14,6 +14,9 @@ to support landing page work.
   direct-response reference OMD's own copy is modelled on. Includes the page formula, sentence
   mechanics, metaphor system, what to borrow, what is off-limits for a medical audience, and a
   calibrated register for OMD.
+- **`OMD-DESIGN-SYSTEM.md`** — the visual system: palette, type scale, buttons, and the
+  editorial layout rules the pages are built to. Section 4 lists the patterns deliberately
+  avoided because they read as machine-generated. Read before any visual change.
 - **`kingkong-content/`** — plain-text extract of all 95 kingkong.co pages.
 - **`kingkong-urls.txt`** — the full list of crawled King Kong URLs.
 
