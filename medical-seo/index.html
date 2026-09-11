@@ -1,0 +1,1218 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>Medical SEO for Clinics | Online Marketing For Doctors</title>
+<meta name="description" content="Medical SEO that fills your surgery list, not just your rankings report. Healthcare SEO for UK clinics, tracked from first click to booked procedure. Book a free strategy call.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Oswald:wght@400;500&family=Kaushan+Script&display=swap">
+<style>
+:root{
+  --omd-green:#00DB98; --omd-green-bright:#00FFB3;
+  --ink:#2E2E2E; --ink-nav:#111111; --black:#000000; --white:#FFFFFF;
+  --muted:#B2B2B2; --band:#F4F6F7; --band-soft:#F9F9F9; --hairline:#E9ECEF;
+  --highlighter:#FFD0CC;
+  --font-body:Montserrat,-apple-system,"Segoe UI",sans-serif;
+  --font-action:Oswald,"Arial Narrow",Arial,sans-serif;
+  --font-display:"Kaushan Script",cursive;
+  --shadow-button:0 10px 20px #999;
+  --shadow-media:0 10px 20px 10px rgba(0,0,0,.15);
+  --shadow-media-strong:0 10px 20px 10px rgba(0,0,0,.25);
+  --shadow-nav:0 20px 20px -20px rgba(0,0,0,.25);
+  --container:1190px; --gutter:24px;
+  --hdr:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:calc(var(--hdr) + 24px)}
+body{
+  margin:0; background:var(--white); color:var(--ink);
+  font-family:var(--font-body); font-weight:300; font-size:18px; line-height:27px;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{max-width:100%; display:block}
+a{color:inherit}
+.wrap{max-width:var(--container); margin:0 auto; padding-inline:var(--gutter)}
+.wrap-wide{max-width:1440px; margin:0 auto; padding-inline:var(--gutter)}
+
+h1,h2,h3,h4{margin:0; letter-spacing:0; font-weight:700; color:inherit}
+h1{font-size:clamp(34px,5.2vw,52px); line-height:1.06}
+h2{font-size:clamp(28px,3.8vw,40px); line-height:1.1}
+h3{font-size:clamp(21px,2.2vw,26px); line-height:1.2}
+p{margin:0 0 18px}
+.lede{font-size:clamp(18px,2vw,21px); line-height:1.55}
+.script{font-family:var(--font-display); font-weight:400; line-height:.9;
+  font-size:clamp(56px,9vw,120px); color:var(--omd-green); display:block}
+.mark{box-shadow:inset 0 -10px 0 0 var(--highlighter)}
+.green{color:var(--omd-green)}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-block; font-family:var(--font-action); font-size:17px; line-height:20px;
+  font-weight:400; letter-spacing:2px; text-transform:uppercase; padding:20px 44px;
+  border-radius:0; box-shadow:var(--shadow-button); cursor:pointer; text-decoration:none;
+  border:1px solid transparent; text-align:center;
+  transition:color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.btn-primary{background:var(--black); color:var(--white); border:1px solid var(--white)}
+.hdr .btn, .band-dark .btn, .tbreak .btn, .hero .btn{box-shadow:0 10px 24px rgba(0,0,0,.55)}
+.btn-primary:hover{border-color:var(--omd-green)}
+.btn-green{background:var(--omd-green); color:var(--white); border:2px solid var(--omd-green)}
+.btn-green:hover{background:var(--omd-green-bright); border-color:var(--omd-green-bright)}
+.btn-outline{background:transparent; color:var(--black); border:2px solid var(--omd-green)}
+.btn-outline:hover{background:var(--omd-green); color:var(--white)}
+.btn-sm{padding:15px 26px; font-size:14px; letter-spacing:1.6px}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid var(--omd-green); outline-offset:3px}
+
+/* ---------- header ---------- */
+.hdr{position:fixed; inset:0 0 auto 0; z-index:100; transition:background-color .3s, box-shadow .3s, padding .3s;
+  padding:18px 0; background:transparent}
+.hdr.solid{background:var(--black); box-shadow:var(--shadow-nav)}
+.hdr-in{display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:28px;
+  max-width:1440px; margin:0 auto; padding-inline:var(--gutter)}
+.hdr-logo img{height:42px; width:auto}
+.nav{display:flex; justify-content:center; gap:clamp(14px,2vw,30px); flex-wrap:nowrap}
+.nav a{font-family:var(--font-body); font-size:13px; font-weight:700; letter-spacing:1.2px;
+  text-transform:uppercase; text-decoration:none; color:var(--white); white-space:nowrap;
+  padding:6px 0; border-bottom:2px solid transparent; transition:border-color .15s, color .15s}
+.nav a:hover{border-bottom-color:var(--omd-green)}
+.hdr-right{display:flex; align-items:center; gap:18px}
+.hdr-tel{font-family:var(--font-action); font-size:16px; letter-spacing:1.4px; color:var(--white);
+  text-decoration:none; white-space:nowrap; transition:color .15s}
+.hdr-tel:hover{color:var(--omd-green)}
+.hdr-icons{display:none; align-items:center; gap:6px}
+.icon-btn{background:none; border:0; padding:10px; cursor:pointer; color:var(--white); line-height:0}
+.icon-btn svg{width:26px; height:26px; stroke:currentColor; fill:none; stroke-width:2}
+.hdr-mobile-cta{display:none}
+
+/* mobile drawer */
+.drawer{position:fixed; inset:0; z-index:110; background:rgba(0,0,0,.97); display:none;
+  flex-direction:column; padding:26px var(--gutter); overflow-y:auto}
+.drawer.open{display:flex}
+.drawer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:36px}
+.drawer-top img{height:40px}
+.drawer nav{display:flex; flex-direction:column; gap:6px}
+.drawer nav a{font-family:var(--font-body); font-weight:700; font-size:17px; letter-spacing:1.4px;
+  text-transform:uppercase; color:var(--white); text-decoration:none; padding:15px 0;
+  border-bottom:1px solid rgba(255,255,255,.12)}
+.drawer .btn{margin-top:28px; width:100%}
+.drawer-tel{color:var(--omd-green); font-family:var(--font-action); font-size:19px;
+  letter-spacing:1.6px; text-decoration:none; margin-top:20px; display:block; text-align:center}
+
+/* ---------- hero ---------- */
+.hero{position:relative; min-height:100svh; display:flex; align-items:center;
+  background:#0b0b0b; overflow:hidden; padding-block:calc(var(--hdr) + 30px) 60px}
+.hero-bg{position:absolute; inset:0; z-index:0}
+.hero-bg img{width:100%; height:100%; object-fit:cover; object-position:72% center}
+.hero-bg::after{content:""; position:absolute; inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,.93) 0%,rgba(0,0,0,.86) 34%,rgba(0,0,0,.45) 56%,rgba(0,0,0,.1) 76%)}
+.hero-in{position:relative; z-index:1; max-width:1440px; margin:0 auto; padding-inline:var(--gutter); width:100%}
+.hero-col{max-width:620px; color:var(--white)}
+.hero-kicker{font-family:var(--font-action); font-size:14px; letter-spacing:3px; text-transform:uppercase;
+  color:var(--omd-green); margin-bottom:20px}
+.hero h1{color:var(--white); margin-bottom:20px}
+.hero-sub{font-size:19px; line-height:1.5; color:#D8DEDC; max-width:52ch; margin-bottom:28px}
+.hero-points{list-style:none; margin:0 0 34px; padding:0; display:grid; gap:11px}
+.hero-points li{display:grid; grid-template-columns:22px 1fr; gap:12px; align-items:start;
+  font-size:16px; line-height:1.45; color:#EDF2F0}
+.hero-points svg{width:18px; height:18px; margin-top:3px; stroke:var(--omd-green); fill:none; stroke-width:3}
+.hero-cta{display:flex; gap:16px; flex-wrap:wrap; align-items:center}
+.hero-note{font-size:13.5px; color:var(--muted); margin:16px 0 0; line-height:1.45}
+.hero-mobile-img{display:none}
+
+/* ---------- bands ---------- */
+.band{padding-block:clamp(64px,9vw,110px); position:relative}
+.band-white{background:var(--white)}
+.band-grey{background:var(--band)}
+.band-dark{background:var(--black); color:var(--white)}
+.band-dark h2,.band-dark h3{color:var(--white)}
+.band-dark p{color:#CFD7D4}
+.eyebrow{font-family:var(--font-action); font-size:13px; letter-spacing:3px; text-transform:uppercase;
+  color:var(--omd-green); margin-bottom:16px}
+.band-head{max-width:64ch; margin-bottom:clamp(34px,5vw,58px)}
+.band-head p{color:#5C6663; font-size:19px; margin-top:16px}
+.band-dark .band-head p{color:#B9C2BF}
+
+/* ---------- press strip ---------- */
+.press{background:var(--white); padding-block:44px; border-bottom:1px solid var(--hairline)}
+.press-label{font-family:var(--font-action); font-size:12px; letter-spacing:3px; text-transform:uppercase;
+  color:#98A2A0; text-align:center; margin-bottom:26px}
+.press-track{display:flex; gap:56px; align-items:center; width:max-content; animation:marquee 46s linear infinite}
+.press-mask{overflow:hidden; mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+.press-track img{height:28px; width:auto; filter:grayscale(1); opacity:.55; flex:none}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ---------- letter ---------- */
+.letter{display:grid; grid-template-columns:1fr 400px; gap:clamp(36px,6vw,84px); align-items:start}
+.letter-body{max-width:62ch}
+.letter-body p{margin-bottom:16px}
+.letter-meta{font-family:var(--font-action); font-size:13px; letter-spacing:2px; text-transform:uppercase;
+  color:#8C9694; margin-bottom:22px}
+.letter-tight p{margin-bottom:10px}
+.letter-sign{margin-top:28px; padding-top:22px; border-top:1px solid var(--hairline)}
+.letter-sign strong{font-weight:500; display:block; font-size:17px}
+.letter-sign span{font-size:14.5px; color:#6B7472}
+.letter-aside{position:sticky; top:calc(var(--hdr) + 24px)}
+.letter-aside figure{margin:0; box-shadow:var(--shadow-media)}
+.letter-aside figcaption{font-size:13.5px; color:#6B7472; padding-top:14px; line-height:1.5}
+
+/* ---------- vanity / offset feature ---------- */
+.offset{display:grid; grid-template-columns:1.05fr .95fr; gap:0; align-items:center}
+.offset-media{position:relative; z-index:0}
+.offset-media img{box-shadow:var(--shadow-media-strong)}
+.offset-panel{background:var(--black); color:var(--white); padding:clamp(32px,4.4vw,60px);
+  margin-left:-90px; position:relative; z-index:1; box-shadow:var(--shadow-media-strong)}
+.offset-panel h2{color:var(--white); margin-bottom:20px}
+.offset-panel p{color:#CFD7D4}
+.offset-list{list-style:none; margin:26px 0 0; padding:0; display:grid; gap:14px}
+.offset-list li{display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:baseline;
+  font-size:16.5px; line-height:1.45; color:#E4EAE8; padding-bottom:14px;
+  border-bottom:1px solid rgba(255,255,255,.1)}
+.offset-list li:last-child{border-bottom:0; padding-bottom:0}
+.offset-list b{font-family:var(--font-action); letter-spacing:1.5px; color:var(--omd-green); font-weight:400}
+
+/* ---------- stat row ---------- */
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:2px; background:rgba(255,255,255,.12)}
+.stat{background:var(--black); padding:34px 26px}
+.stat b{display:block; font-size:clamp(34px,4.6vw,50px); line-height:1; font-weight:700; color:var(--omd-green)}
+.stat span{display:block; margin-top:12px; font-size:14.5px; line-height:1.45; color:#B9C2BF}
+
+/* ---------- process ---------- */
+.proc{display:grid; grid-template-columns:repeat(auto-fit,minmax(288px,1fr)); gap:1px; background:var(--hairline)}
+.proc-item{background:var(--white); padding:32px 28px 34px; position:relative; transition:background-color .2s}
+.proc-item:hover{background:var(--band-soft)}
+.proc-num{font-family:var(--font-action); font-size:13px; letter-spacing:2.5px; color:var(--omd-green); margin-bottom:14px}
+.proc-item h3{font-size:20px; margin-bottom:10px; line-height:1.25}
+.proc-item p{font-size:15.5px; line-height:1.55; color:#5C6663; margin:0}
+.proc-feature{grid-column:1/-1; background:var(--black); color:var(--white); padding:0;
+  display:grid; grid-template-columns:1fr 1fr; align-items:stretch}
+.proc-feature img{height:100%; object-fit:cover; min-height:280px}
+.proc-feature-txt{padding:clamp(30px,4vw,52px); display:flex; flex-direction:column; justify-content:center}
+.proc-feature-txt h3{color:var(--white); margin-bottom:14px}
+.proc-feature-txt p{color:#CFD7D4; margin:0}
+
+/* ---------- tabs + slider ---------- */
+.tabs{display:flex; gap:8px; flex-wrap:nowrap; margin-bottom:28px; overflow-x:auto;
+  padding-bottom:10px; scrollbar-width:thin; -webkit-overflow-scrolling:touch;
+  mask-image:linear-gradient(90deg,#000 0,#000 94%,transparent)}
+.tabs::-webkit-scrollbar{height:4px}
+.tabs::-webkit-scrollbar-thumb{background:var(--omd-green)}
+.tab{flex:none}
+.tab{font-family:var(--font-action); font-size:13px; letter-spacing:1.5px; text-transform:uppercase;
+  padding:11px 18px; border:1px solid var(--hairline); background:var(--white); color:var(--ink);
+  cursor:pointer; white-space:nowrap; transition:background-color .15s, color .15s, border-color .15s}
+.tab:hover{border-color:var(--omd-green)}
+.tab[aria-selected="true"]{background:var(--black); color:var(--white); border-color:var(--black)}
+.band-dark .tab{background:transparent; color:#CFD7D4; border-color:rgba(255,255,255,.22)}
+.band-dark .tab:hover{border-color:var(--omd-green); color:var(--white)}
+.band-dark .tab[aria-selected="true"]{background:var(--omd-green); color:var(--black); border-color:var(--omd-green)}
+.slider{position:relative}
+.slides{display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory;
+  scroll-behavior:smooth; padding-bottom:18px; scrollbar-width:thin}
+.slides::-webkit-scrollbar{height:5px}
+.slides::-webkit-scrollbar-thumb{background:var(--omd-green)}
+.slide{flex:0 0 clamp(280px,42vw,520px); scroll-snap-align:start}
+.slide figure{margin:0; background:var(--white); box-shadow:var(--shadow-media); height:100%;
+  display:flex; flex-direction:column}
+.slide img{width:100%; aspect-ratio:16/10; object-fit:cover; object-position:top center; background:var(--band)}
+.slide figcaption{padding:16px 18px 20px; flex:1; font-size:14px; line-height:1.5; color:#4D5553}
+.slide-client{font-family:var(--font-action); font-size:11.5px; letter-spacing:1.6px;
+  text-transform:uppercase; color:var(--omd-green); display:block; margin-bottom:7px}
+.slider-nav{display:flex; gap:10px; margin-top:20px; align-items:center}
+.snav{width:48px; height:48px; border:1px solid var(--hairline); background:var(--white);
+  cursor:pointer; display:grid; place-items:center; transition:background-color .15s, border-color .15s}
+.snav:hover{background:var(--black); border-color:var(--black)}
+.snav svg{width:20px; height:20px; stroke:var(--ink); fill:none; stroke-width:2}
+.snav:hover svg{stroke:var(--white)}
+.band-dark .snav{background:transparent; border-color:rgba(255,255,255,.25)}
+.band-dark .snav svg{stroke:var(--white)}
+.band-dark .snav:hover{background:var(--omd-green); border-color:var(--omd-green)}
+.band-dark .snav:hover svg{stroke:var(--black)}
+.slider-count{font-family:var(--font-action); font-size:13px; letter-spacing:1.6px; color:#8C9694; margin-left:8px}
+
+/* ---------- case studies ---------- */
+.cs-nav{display:flex; gap:0; overflow-x:auto; scrollbar-width:thin;
+  mask-image:linear-gradient(90deg,#000 0,#000 95%,transparent); border-bottom:1px solid rgba(255,255,255,.16); margin-bottom:0}
+.cs-nav button{flex:none; background:none; border:0; border-bottom:3px solid transparent; cursor:pointer;
+  padding:18px 22px; font-family:var(--font-action); font-size:13.5px; letter-spacing:1.5px;
+  text-transform:uppercase; color:#9AA5A2; white-space:nowrap; transition:color .15s, border-color .15s}
+.cs-nav button:hover{color:var(--white)}
+.cs-nav button[aria-selected="true"]{color:var(--white); border-bottom-color:var(--omd-green)}
+.cs-panel{display:none; padding-top:clamp(34px,5vw,60px)}
+.cs-panel.on{display:block; animation:fade .4s ease-out}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.cs-grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,4.5vw,64px); align-items:start}
+.cs-logo{height:46px; width:auto; filter:grayscale(1) brightness(3); margin-bottom:22px; opacity:.9}
+.cs-title{font-size:clamp(23px,2.7vw,32px); line-height:1.2; margin-bottom:18px; color:var(--white)}
+.cs-meta{font-family:var(--font-action); font-size:12.5px; letter-spacing:2px; text-transform:uppercase;
+  color:var(--omd-green); margin-bottom:20px}
+.cs-body p{font-size:16.5px; line-height:1.6; color:#C3CCC9}
+.cs-metrics{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:rgba(255,255,255,.14);
+  margin-top:8px; box-shadow:var(--shadow-media-strong)}
+.cs-metric{background:#0A0A0A; padding:26px 22px}
+.cs-metric b{display:block; font-size:clamp(27px,3.4vw,40px); line-height:1; color:var(--omd-green); font-weight:700}
+.cs-metric span{display:block; margin-top:10px; font-size:13.5px; line-height:1.4; color:#AEB8B5}
+.cs-shot{margin-top:26px; box-shadow:var(--shadow-media-strong); background:#111}
+.cs-shot img{width:100%}
+.cs-shot figcaption{font-size:13px; color:#8C9694; padding:12px 16px 16px; line-height:1.5}
+.cs-quote{border-left:3px solid var(--omd-green); padding:4px 0 4px 22px; margin:26px 0 0;
+  font-size:17px; line-height:1.55; color:#DCE3E1; font-style:normal}
+.cs-quote footer{margin-top:12px; font-size:14px; color:#939E9B; font-family:var(--font-action);
+  letter-spacing:1.2px; text-transform:uppercase}
+
+/* ---------- testimonial break ---------- */
+.tbreak{position:relative; background:var(--black); color:var(--white); overflow:hidden}
+.tbreak-bg{position:absolute; inset:0; z-index:0; opacity:.32}
+.tbreak-bg img{width:100%; height:100%; object-fit:cover}
+.tbreak::before{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(90deg,rgba(0,0,0,.95),rgba(0,0,0,.55))}
+.tbreak .wrap{position:relative; z-index:2}
+.tquote{max-width:60ch}
+.tquote p{font-size:clamp(21px,2.7vw,31px); line-height:1.32; font-weight:300; color:var(--white); margin-bottom:24px}
+.tquote cite{font-style:normal; display:block; font-size:15px; line-height:1.5; color:var(--muted)}
+.tquote cite b{display:block; color:var(--white); font-weight:500; font-size:17px; margin-bottom:4px;
+  font-family:var(--font-body)}
+.tgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1px; background:var(--hairline)}
+.tcard{background:var(--white); padding:34px 30px; display:flex; flex-direction:column}
+.tcard p{font-size:16px; line-height:1.6; color:#4D5553; flex:1}
+.tcard cite{font-style:normal; font-size:14px; color:#6B7472; line-height:1.5; padding-top:18px;
+  border-top:1px solid var(--hairline)}
+.tcard cite b{display:block; color:var(--ink); font-weight:500; font-size:16px; margin-bottom:3px}
+.tvideo{position:relative; display:block; background:#000; box-shadow:var(--shadow-media-strong); cursor:pointer;
+  border:0; padding:0; width:100%; aspect-ratio:16/9; overflow:hidden}
+.tvideo img{width:100%; height:100%; object-fit:cover; opacity:.62; transition:opacity .25s, transform .5s}
+.tvideo:hover img{opacity:.8; transform:scale(1.03)}
+.tvideo span{position:absolute; inset:0; display:grid; place-items:center}
+.tvideo span::after{content:""; width:74px; height:74px; border:2px solid var(--white); border-radius:50%;
+  background:rgba(0,0,0,.4); background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:54% 50%; background-size:30px; transition:background-color .2s, border-color .2s}
+.tvideo:hover span::after{border-color:var(--omd-green); background-color:rgba(0,219,152,.28)}
+.tvideo iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+
+/* ---------- compliance ---------- */
+.comp{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:26px; margin-top:14px}
+.comp-item{padding-top:20px; border-top:2px solid var(--omd-green)}
+.comp-item b{display:block; font-family:var(--font-action); font-size:16px; letter-spacing:1.8px;
+  text-transform:uppercase; margin-bottom:10px}
+.comp-item p{font-size:15px; line-height:1.55; color:#5C6663; margin:0}
+.band-dark .comp-item p{color:#B9C2BF}
+
+/* ---------- fit / qualification ---------- */
+.fit{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--hairline); box-shadow:var(--shadow-media)}
+.fit-col{background:var(--white); padding:clamp(28px,3.6vw,46px)}
+.fit-col h3{margin-bottom:20px; font-size:22px}
+.fit-col ul{list-style:none; margin:0; padding:0; display:grid; gap:15px}
+.fit-col li{display:grid; grid-template-columns:24px 1fr; gap:13px; font-size:16px; line-height:1.5; align-items:start}
+.fit-col svg{width:19px; height:19px; margin-top:4px; fill:none; stroke-width:2.5}
+.fit-yes svg{stroke:var(--omd-green)}
+.fit-no{background:var(--band)}
+.fit-no svg{stroke:#C2CAC8}
+.fit-no li{color:#6B7472}
+
+/* ---------- faq ---------- */
+.faq{max-width:880px}
+.faq details{border-bottom:1px solid var(--hairline)}
+.faq summary{cursor:pointer; list-style:none; padding:26px 46px 26px 0; position:relative;
+  font-size:clamp(17px,2vw,20px); font-weight:500; line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:""; position:absolute; right:8px; top:50%; width:15px; height:15px;
+  margin-top:-7px; border-right:2px solid var(--omd-green); border-bottom:2px solid var(--omd-green);
+  transform:rotate(45deg); transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq .faq-a{padding:0 40px 28px 0; color:#5C6663; font-size:16.5px; line-height:1.62}
+.faq .faq-a p:last-child{margin-bottom:0}
+
+/* ---------- booking ---------- */
+.book{display:grid; grid-template-columns:.92fr 1.08fr; gap:clamp(30px,4.6vw,62px); align-items:start}
+.book-embed{background:var(--white); box-shadow:var(--shadow-media-strong); min-height:660px}
+.book-embed iframe{width:100%; min-height:660px; border:0; display:block}
+.book-list{list-style:none; margin:26px 0 0; padding:0; display:grid; gap:14px}
+.book-list li{display:grid; grid-template-columns:22px 1fr; gap:13px; font-size:16.5px; line-height:1.5; color:#CFD7D4}
+.book-list svg{width:18px; height:18px; margin-top:4px; stroke:var(--omd-green); fill:none; stroke-width:3}
+
+/* ---------- footer ---------- */
+.ftr{background:var(--black); color:var(--muted); padding:76px 0 54px; font-size:15px}
+.ftr-in{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px}
+.ftr img{height:44px; margin-bottom:20px}
+.ftr h4{color:var(--white); font-family:var(--font-action); font-size:13px; letter-spacing:2px;
+  text-transform:uppercase; font-weight:400; margin-bottom:16px}
+.ftr a{color:var(--muted); text-decoration:none; display:block; padding:5px 0; transition:color .15s}
+.ftr a:hover{color:var(--omd-green)}
+.ftr-btm{margin-top:50px; padding-top:26px; border-top:1px solid rgba(255,255,255,.12);
+  display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; font-size:13.5px}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0; transform:translateY(18px); transition:opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1; transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .nav{gap:14px}
+  .nav a{font-size:12px; letter-spacing:.8px}
+  .hdr-tel{font-size:14px}
+  .letter{grid-template-columns:1fr}
+  .letter-aside{position:static; max-width:460px}
+  .offset{grid-template-columns:1fr}
+  .offset-panel{margin-left:0; margin-top:-50px; margin-inline:24px}
+  .book{grid-template-columns:1fr}
+  .proc-feature{grid-template-columns:1fr}
+  .proc-feature img{min-height:230px}
+}
+@media (max-width:900px){
+  .cs-grid{grid-template-columns:1fr}
+  .fit{grid-template-columns:1fr}
+  .ftr-in{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  :root{--hdr:74px}
+  body{font-size:17px; line-height:26px}
+  .nav,.hdr-tel{display:none}
+  .hdr-right > .btn{display:none}          /* desktop CTA off on mobile */
+  .hdr-icons{display:flex}
+  .hdr-in{display:flex; justify-content:space-between; align-items:center; gap:12px}
+  .hdr.solid .hdr-logo{display:none}
+  .hdr.solid .hdr-mobile-cta{display:inline-block}
+  .hdr-mobile-cta{padding:13px 16px; font-size:12px; letter-spacing:1px; box-shadow:none;
+    white-space:nowrap; width:auto}
+  .hdr-logo img{height:38px}
+
+  /* hero becomes stacked: full-bleed image above, gradient into text */
+  .hero{min-height:0; display:block; padding:0; background:var(--black)}
+  .hero-bg{display:none}
+  .hero-mobile-img{display:block; position:relative; margin-top:var(--hdr)}
+  .hero-mobile-img img{width:100%; height:52vh; min-height:290px; object-fit:cover; object-position:64% 22%}
+  .hero-mobile-img::after{content:""; position:absolute; left:0; right:0; bottom:-1px; height:58%;
+    background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.72) 48%,#000 100%)}
+  .hero-in{padding-block:8px 52px}
+  .hero-col{max-width:none}
+  .hero-cta .btn{width:100%}
+  .hero-points li{font-size:15.5px}
+}
+@media (max-width:640px){
+  :root{--gutter:18px}
+  .btn{padding:18px 26px; font-size:15px; letter-spacing:1.4px; width:100%}
+  .hdr-mobile-cta{width:auto}
+  .slide{flex:0 0 86vw}
+  .cs-metrics{grid-template-columns:1fr 1fr}
+  .ftr-in{grid-template-columns:1fr}
+  .offset-panel{margin-inline:0}
+  .press-track{gap:34px}
+  .press-track img{height:23px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important}
+  .rv{opacity:1; transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="hdr-logo" href="#top" aria-label="Online Marketing For Doctors">
+      <img src="/brand/logo-omd-white.svg" alt="Online Marketing For Doctors">
+    </a>
+    <a class="btn btn-green btn-sm hdr-mobile-cta" href="#book">Book a consultation</a>
+    <nav class="nav" aria-label="Section navigation">
+      <a href="#problem">The Problem</a>
+      <a href="#process">How It Works</a>
+      <a href="#results">Results</a>
+      <a href="#ai-search">AI Search</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+    <div class="hdr-right">
+      <a class="hdr-tel" href="tel:+442045722823">+44 20 4572 2823</a>
+      <a class="btn btn-green btn-sm" href="#book">Book a free strategy call</a>
+      <div class="hdr-icons">
+        <a class="icon-btn" href="tel:+442045722823" aria-label="Call Online Marketing For Doctors">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        </a>
+        <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+          <svg viewBox="0 0 24 24" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top">
+    <img src="/brand/logo-omd-white.svg" alt="Online Marketing For Doctors">
+    <button class="icon-btn" id="closeBtn" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile navigation">
+    <a href="#problem">The Problem</a>
+    <a href="#process">How It Works</a>
+    <a href="#results">Results</a>
+    <a href="#ai-search">AI Search</a>
+    <a href="#cases">Case Studies</a>
+    <a href="#proof">Testimonials</a>
+    <a href="#faq">FAQs</a>
+  </nav>
+  <a class="btn btn-green" href="#book">Book a free strategy call</a>
+  <a class="drawer-tel" href="tel:+442045722823">+44 20 4572 2823</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="/images/01-hero.webp" alt="" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero-mobile-img">
+    <img src="/images/01-hero.webp" alt="" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero-in">
+    <div class="hero-col">
+      <p class="hero-kicker">Medical SEO for clinics</p>
+      <h1>Medical SEO that fills your surgery list, not just your rankings report.</h1>
+      <p class="hero-sub">We get clinics found by the patients who are already searching, already comparing, and already reaching for their card. Then we track every one of them through to a booked procedure.</p>
+      <ul class="hero-points">
+        <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Page one for the procedures that actually pay, not vanity keywords nobody searches</span></li>
+        <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Found in Google, Google Maps and now ChatGPT and AI Overviews</span></li>
+        <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Tracked from first click to booked procedure, so you see what your money bought</span></li>
+        <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Written to GMC, ASA and GDPR rules from the first draft, never retrofitted</span></li>
+        <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Healthcare only since 2011. It is the only thing we have ever done</span></li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-green" href="#book">Book a free strategy call</a>
+        <a class="btn btn-primary" href="#results">See the proof first</a>
+      </div>
+      <p class="hero-note">Free, 30 minutes, no pitch deck. We take on two new clinics a month, so if the diary is full we will tell you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESS ============ -->
+<section class="press">
+  <p class="press-label">The work has been covered in</p>
+  <div class="press-mask">
+    <div class="press-track" id="pressTrack"></div>
+  </div>
+</section>
+
+<!-- ============ THE LETTER ============ -->
+<section class="band band-white" id="problem">
+  <div class="wrap">
+    <div class="letter">
+      <div class="letter-body rv">
+        <p class="letter-meta">From the desk of Huyen Truong &nbsp;&bull;&nbsp; London and Sydney &nbsp;&bull;&nbsp; <span id="today"></span></p>
+        <h2>You are a very good surgeon. Google has no idea.</h2>
+        <p style="margin-top:22px">Dear Clinic Owner,</p>
+        <div class="letter-tight">
+          <p>Let us be honest about something.</p>
+          <p>Somewhere within ten miles of your clinic there is a surgeon who is not as good as you.</p>
+          <p>Less experienced. Fewer cases. Results you would quietly wince at.</p>
+          <p>And their diary is full.</p>
+          <p>Yours has gaps in it.</p>
+        </div>
+        <p style="margin-top:22px">This is the bit nobody warned you about in training. Being excellent at the operation is not the same as being <em>found</em> by the person who needs it. Those are two completely different skills, and medical school only ever taught you one of them.</p>
+        <p>So you did what most clinic owners do. You hired somebody.</p>
+        <p>Maybe it was an agency that talked beautifully about brand. Maybe it was a freelancer who disappeared for six weeks and came back with a report full of charts going up, while your phone stayed exactly as quiet as it was before. Maybe you were sold a website that looked lovely and converted nobody.</p>
+        <p>And at some point you started to wonder whether any of this actually works, or whether it is just a tax you pay for existing on the internet.</p>
+        <p>We understand the suspicion. We would be suspicious too.</p>
+        <p>So here is a different offer. Do not believe a word we say. Look at the evidence instead. There are 385 ranking screenshots further down this page, seven case studies with the numbers attached, and the names of the surgeons who will confirm all of it.</p>
+        <p>Read them, then decide.</p>
+        <div class="letter-sign">
+          <strong>Huyen Truong, MBA</strong>
+          <span>Founder and Search Marketing Director, Online Marketing For Doctors</span>
+        </div>
+      </div>
+      <aside class="letter-aside rv">
+        <figure>
+          <img src="/images/02-empty-room.webp" alt="A consultant sitting alone in an empty consulting room in the evening" loading="lazy">
+        </figure>
+        <figcaption>The quiet consulting room at six o'clock is not a marketing problem in the abstract. It is next month's payroll.</figcaption>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VANITY METRICS ============ -->
+<section class="band band-white" style="padding-top:0">
+  <div class="wrap-wide">
+    <div class="offset">
+      <div class="offset-media rv">
+        <img src="/images/15-reports.webp" alt="A stack of printed marketing performance reports on a dark desk" loading="lazy">
+      </div>
+      <div class="offset-panel rv">
+        <p class="eyebrow">What your last agency measured</p>
+        <h2>You cannot put impressions on your surgery list.</h2>
+        <p>Every agency report is engineered to look like progress. Impressions. Reach. Sessions. Average position. A chart that climbs and a number in bold.</p>
+        <p>None of it pays a nurse.</p>
+        <ul class="offset-list">
+          <li><b>01</b><span>Rankings for search terms with almost no volume, because they were the easy ones to win</span></li>
+          <li><b>02</b><span>Traffic that arrives, reads one paragraph and leaves, counted as a success</span></li>
+          <li><b>03</b><span>Enquiries counted at the form, never followed through to who actually booked</span></li>
+          <li><b>04</b><span>No idea which procedure the revenue came from, so no idea what to do next</span></li>
+        </ul>
+        <p style="margin-top:26px; color:#EDF2F0">We measure two things. How many people enquired, and how many of them ended up on your table. Everything else is decoration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="band band-dark" style="padding-block:0">
+  <div class="wrap-wide" style="padding-inline:0">
+    <div class="stats">
+      <div class="stat"><b>2011</b><span>Working with clinics, and only clinics, ever since</span></div>
+      <div class="stat"><b>5</b><span>Continents where our clients take bookings</span></div>
+      <div class="stat"><b>3x+</b><span>The minimum return we hold ourselves to</span></div>
+      <div class="stat"><b>385</b><span>Ranking screenshots on this page, all of them real</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL BREAK 1 ============ -->
+<section class="band tbreak">
+  <div class="tbreak-bg"><img src="/images/03-harley-street.webp" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <blockquote class="tquote rv">
+      <p>I have seen an increase of almost 730% in the total number of leads that come to the clinic, and this also reflects on the total number of patients I have been operating on.</p>
+      <cite><b>Mr Hazem Alfie</b>MBBCh, MSc, FRCS &middot; Consultant Plastic Surgeon<br>Delta Clinics, Harley Street and Finchley, London</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="band band-white" id="process">
+  <div class="wrap">
+    <div class="band-head rv">
+      <p class="eyebrow">The nine step high performance process</p>
+      <h2>What we actually do, in the order we actually do it.</h2>
+      <p>No secret sauce, no black hat, nothing that puts your domain at risk. This is the same sequence we have run for clinics since 2011, refined every time it met a new market.</p>
+    </div>
+  </div>
+  <div class="wrap-wide">
+    <div class="proc rv">
+      <div class="proc-item"><p class="proc-num">Step 01</p><h3>Consultation</h3><p>We work out which procedure makes you the most money, which one you want to be known for, and who your ideal patient actually is. Everything downstream depends on getting this right.</p></div>
+      <div class="proc-item"><p class="proc-num">Step 02</p><h3>Technical audit</h3><p>A full crawl of the site. Speed, indexation, structure, duplicate content, the thin pages quietly dragging everything down. We find what is broken before we build anything on top of it.</p></div>
+      <div class="proc-item"><p class="proc-num">Step 03</p><h3>Conversion review</h3><p>Traffic to a site that does not convert is a bonfire. We review the journey from landing to enquiry and fix the leaks first, because doubling a 1% conversion rate is cheaper than doubling the traffic.</p></div>
+      <div class="proc-item"><p class="proc-num">Step 04</p><h3>Keyword research</h3><p>We map the terms real patients use, by procedure and by location, and separate the ones with commercial intent from the ones that only look impressive in a report.</p></div>
+      <div class="proc-item"><p class="proc-num">Step 05</p><h3>Competitor analysis</h3><p>What the clinic down the road ranks for and you do not. Which of their pages earn the traffic, where their links come from, and the gap you can take while they are not looking.</p></div>
+      <div class="proc-item"><p class="proc-num">Step 06</p><h3>On page optimisation</h3><p>Titles, structure, schema, internal linking, image handling, Core Web Vitals. The unglamorous work that decides whether Google trusts the site enough to rank it.</p></div>
+      <div class="proc-item"><p class="proc-num">Step 07</p><h3>Off page and links</h3><p>Placements on genuine health, lifestyle and news publications. One authoritative link beats a thousand cheap ones, and we have never used a private blog network. Not once.</p></div>
+      <div class="proc-item"><p class="proc-num">Step 08</p><h3>Content and local SEO</h3><p>Long form procedure pages written to E-E-A-T standards, plus Google Business Profiles restructured per location so your clinics rank in Maps instead of competing with each other.</p></div>
+      <div class="proc-item"><p class="proc-num">Step 09</p><h3>Reporting</h3><p>Monthly, in plain English, measured against the benchmarks we set on day one. Enquiries and bookings first. You will always know what your money bought.</p></div>
+      <div class="proc-feature">
+        <img src="/images/11-strategy.webp" alt="A strategy session reviewing campaign performance" loading="lazy">
+        <div class="proc-feature-txt">
+          <p class="eyebrow">The part most agencies skip</p>
+          <h3>We fix the conversion rate before we buy you a single extra visitor.</h3>
+          <p>It is the least exciting slide in any proposal and the one that makes the most money. When HR Plastic Surgery came to us the traffic was the smaller problem. We rebuilt the site around one procedure, lifted the conversion rate by 155%, and only then went after the rankings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEO RESULTS ============ -->
+<section class="band band-grey" id="results">
+  <div class="wrap">
+    <div class="band-head rv">
+      <p class="eyebrow">Organic search results</p>
+      <h2>282 screenshots. Real clinics, real rankings, nothing staged.</h2>
+      <p>Pick an industry. These are live search results for our clients, captured as they appeared. Not a mock up, not a projection, not a chart we drew ourselves.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="tabs" role="tablist" aria-label="SEO results by industry" id="seoTabs"></div>
+    <div class="slider">
+      <div class="slides" id="seoSlides"></div>
+      <div class="slider-nav">
+        <button class="snav" data-slider="seoSlides" data-dir="-1" aria-label="Previous results">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button class="snav" data-slider="seoSlides" data-dir="1" aria-label="Next results">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+        <span class="slider-count" id="seoCount"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AI SEARCH ============ -->
+<section class="band band-dark" id="ai-search" style="position:relative; overflow:hidden">
+  <div style="position:absolute; inset:0; z-index:0; opacity:.5">
+    <img src="/images/19-network-texture.webp" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy">
+  </div>
+  <div class="wrap" style="position:relative; z-index:1">
+    <div class="band-head rv">
+      <p class="eyebrow">AI search and answer engines</p>
+      <h2>Your next patient may never see a search result at all.</h2>
+      <p>They are asking ChatGPT which surgeon to use. They are reading the AI Overview at the top of Google and stopping there. If the answer lists five clinics in your city and you are not one of them, you did not lose the enquiry. You were never in the running.</p>
+      <p style="margin-top:12px">We have been optimising for this since before it had a name. Here is what it looks like when it works.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="AI search results by industry" id="aiTabs"></div>
+    <div class="slider">
+      <div class="slides" id="aiSlides"></div>
+      <div class="slider-nav">
+        <button class="snav" data-slider="aiSlides" data-dir="-1" aria-label="Previous AI results">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button class="snav" data-slider="aiSlides" data-dir="1" aria-label="Next AI results">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+        <span class="slider-count" id="aiCount"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDIES ============ -->
+<section class="band band-dark" id="cases">
+  <div class="wrap">
+    <div class="band-head rv">
+      <p class="eyebrow">Seven clinics, seven sets of numbers</p>
+      <h2>The organic search results, with the surgeons' names on them.</h2>
+      <p>Only the SEO figures are shown here. Where a campaign also ran paid or social, those numbers have been left out, because this page is about what organic search did.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="cs-nav" role="tablist" aria-label="Case studies">
+      <button role="tab" aria-selected="true" data-cs="delta">Delta Clinics</button>
+      <button role="tab" aria-selected="false" data-cs="bfc">British Face Clinic</button>
+      <button role="tab" aria-selected="false" data-cs="hr">HR Plastic Surgery</button>
+      <button role="tab" aria-selected="false" data-cs="bb">Breast &amp; Body</button>
+      <button role="tab" aria-selected="false" data-cs="vein">Vein Doctors Sydney</button>
+      <button role="tab" aria-selected="false" data-cs="crown">Crown Clinic</button>
+      <button role="tab" aria-selected="false" data-cs="mehta">Dr Malay Mehta</button>
+    </div>
+
+    <div class="cs-panel on" id="cs-delta">
+      <div class="cs-grid">
+        <div>
+          <img class="cs-logo" src="/client-logos/delta-clinics-logo.webp" alt="Delta Clinics" loading="lazy">
+          <p class="cs-meta">Plastic surgery &middot; Harley Street and Finchley, London &middot; 8 months</p>
+          <h3 class="cs-title">A brand new London clinic, invisible on Google, to 730% more enquiries in eight months.</h3>
+          <div class="cs-body">
+            <p>Mr Hazem Alfie had nineteen years as a consultant behind him and a clinic nobody could find. No proper website, no search visibility, and previous agencies who had not moved the needle. In a city where every plastic surgery term is fought over, he was starting from nothing.</p>
+            <p>We rebuilt the site around his two locations, wrote long form procedure content to E-E-A-T standards, restructured both Google Business Profiles so Harley Street and Finchley stopped competing with each other, and earned links from genuine UK health and lifestyle titles.</p>
+          </div>
+          <blockquote class="cs-quote">They are very able to do what they promise. I have seen an increase of almost 730% in the total number of leads, and this reflects on the number of patients I have been operating on.
+            <footer>Mr Hazem Alfie, MBBCh MSc FRCS</footer></blockquote>
+        </div>
+        <div>
+          <div class="cs-metrics">
+            <div class="cs-metric"><b>1,500%</b><span>Increase in website traffic</span></div>
+            <div class="cs-metric"><b>730%</b><span>Increase in conversions</span></div>
+            <div class="cs-metric"><b>540%</b><span>Growth in keyword rankings</span></div>
+            <div class="cs-metric"><b>8</b><span>Months from launch to these figures</span></div>
+          </div>
+          <figure class="cs-shot">
+            <img src="/images/cases/cs-delta.webp" alt="Keyword ranking growth for Delta Clinics" loading="lazy">
+            <figcaption>Keyword ranking growth across targeted plastic surgery procedures in London.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-panel" id="cs-bfc">
+      <div class="cs-grid">
+        <div>
+          <img class="cs-logo" src="/client-logos/british_face_clinic_logo.webp" alt="British Face Clinic" loading="lazy">
+          <p class="cs-meta">Facial cosmetic surgery &middot; Milton Keynes, Northampton, Harley Street &middot; 12 months</p>
+          <h3 class="cs-title">1,012% keyword growth and a 5.08x return, by refusing to be a general clinic.</h3>
+          <div class="cs-body">
+            <p>Mr Mrinal Supriya was excellent at the deep plane facelift and buried under clinics offering everything to everyone. The site was not built to convert and barely registered for his two most valuable procedures.</p>
+            <p>We repositioned the clinic around the deep plane facelift specifically, rewrote the procedure pages as the most thorough resource in the UK market, and built a monthly content programme answering what patients were really searching at two in the morning.</p>
+          </div>
+          <blockquote class="cs-quote">We have seen a significant increase in our organic keywords, which has grown by 1,000%. We have seen an increase in our practice with a ROI of around 5.08.
+            <footer>Mr Mrinal Supriya, Facial Cosmetic Surgeon</footer></blockquote>
+        </div>
+        <div>
+          <div class="cs-metrics">
+            <div class="cs-metric"><b>1,012%</b><span>Growth in keyword rankings</span></div>
+            <div class="cs-metric"><b>5.08x</b><span>Return on investment</span></div>
+            <div class="cs-metric"><b>300%</b><span>Increase in conversions</span></div>
+            <div class="cs-metric"><b>106%</b><span>Increase in organic traffic</span></div>
+          </div>
+          <figure class="cs-shot">
+            <img src="/images/cases/cs-bfc.webp" alt="Year on year analytics results for British Face Clinic" loading="lazy">
+            <figcaption>Year on year performance, twelve months after the campaign began.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-panel" id="cs-hr">
+      <div class="cs-grid">
+        <div>
+          <img class="cs-logo" src="/client-logos/hr-plastic-surgery-logo.webp" alt="HR Plastic Surgery" loading="lazy">
+          <p class="cs-meta">Plastic surgery &middot; London &middot; 18 months</p>
+          <h3 class="cs-title">2,098% more organic traffic by owning one procedure instead of chasing twelve.</h3>
+          <div class="cs-body">
+            <p>Mr Hyder Ridha had been operating since 2007 and competing against London clinics with a decade of marketing behind them. Thin content, almost no reviews, no funnel, and a site that gave a visitor nothing to do.</p>
+            <p>We rebuilt the entire site positioning him as the Mummy Makeover specialist, lifted the conversion rate by 155% before chasing a single extra visitor, then went after the competitive terms. It now draws over 16,000 visitors a month.</p>
+          </div>
+          <blockquote class="cs-quote">OMD secured our ranking for highly competitive keywords, driving over 16,000 monthly visitors. The conversion numbers witnessed a surge of 400% across all traffic channels.
+            <footer>Mr Hyder Ridha, Consultant Plastic Surgeon</footer></blockquote>
+        </div>
+        <div>
+          <div class="cs-metrics">
+            <div class="cs-metric"><b>2,098%</b><span>Increase in organic traffic</span></div>
+            <div class="cs-metric"><b>410%</b><span>More enquiries from organic search</span></div>
+            <div class="cs-metric"><b>771%</b><span>Increase in total traffic</span></div>
+            <div class="cs-metric"><b>155%</b><span>Lift in website conversion rate</span></div>
+          </div>
+          <figure class="cs-shot">
+            <img src="/images/cases/cs-hr.webp" alt="Month on month growth in visitors and enquiries for HR Plastic Surgery" loading="lazy">
+            <figcaption>Month on month growth in website visitors and enquiry numbers.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-panel" id="cs-bb">
+      <div class="cs-grid">
+        <div>
+          <img class="cs-logo" src="/client-logos/bb-clinic-uk-logo.webp" alt="Breast and Body Clinic UK" loading="lazy">
+          <p class="cs-meta">Plastic surgery &middot; Manchester &middot; 18 months</p>
+          <h3 class="cs-title">From 300 impressions a day to 4,270, and a 706% rise in enquiries.</h3>
+          <div class="cs-body">
+            <p>Mr Aftab Siddiqui was not on page one for any of his main procedures. The site had no lead magnets, no tracking worth the name, and no way of telling which marketing was working.</p>
+            <p>We redesigned it, built out eBooks and lead capture, set up a CRM so every enquiry could be traced, and ran the full nine step process against the terms that actually convert in the North West.</p>
+          </div>
+          <blockquote class="cs-quote">My website has gone from 300 impressions a day to 4,270 a day. I was not on the first page for any of my main keywords and now I am on the first page for all of them. They truly are a partner in building my business.
+            <footer>Mr Aftab Siddiqui, Plastic Surgeon</footer></blockquote>
+        </div>
+        <div>
+          <div class="cs-metrics">
+            <div class="cs-metric"><b>1,068%</b><span>Increase in total traffic</span></div>
+            <div class="cs-metric"><b>800%</b><span>More enquiries from organic search</span></div>
+            <div class="cs-metric"><b>706%</b><span>Increase in total enquiries</span></div>
+            <div class="cs-metric"><b>618%</b><span>Lift in website conversions</span></div>
+          </div>
+          <figure class="cs-shot">
+            <img src="/images/cases/cs-bb.webp" alt="Growth in visitors and enquiries for Breast and Body Clinic" loading="lazy">
+            <figcaption>Growth recorded in January, traditionally the quietest month in the surgical calendar.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-panel" id="cs-vein">
+      <div class="cs-grid">
+        <div>
+          <p class="cs-meta" style="margin-bottom:10px">Vein and vascular &middot; Sydney &middot; 12 months</p>
+          <h3 class="cs-title">Under 200 users a day to almost 500, and bookings up 113%.</h3>
+          <div class="cs-body">
+            <p>Dr Ryan McConnell had already tried a local agency and seen very little for it. Low traffic, weak visibility, and a site that was not built to turn a curious reader into a consultation.</p>
+            <p>We rebuilt the site around conversion first, added an online vein assessment as a lead capture step, and produced content steadily enough that the clinic began ranking for thousands of additional terms rather than a handful.</p>
+          </div>
+          <blockquote class="cs-quote">My website has gone from less than 200 users to almost 500 per day. More than doubled in six months. As new content was produced we ranked for thousands more keywords, with visibility increasing 35%.
+            <footer>Dr Ryan McConnell, Endovascular Specialist</footer></blockquote>
+        </div>
+        <div>
+          <div class="cs-metrics">
+            <div class="cs-metric"><b>113%</b><span>Increase in total patient bookings</span></div>
+            <div class="cs-metric"><b>73%</b><span>More enquiries from organic search</span></div>
+            <div class="cs-metric"><b>66%</b><span>Increase in organic traffic</span></div>
+            <div class="cs-metric"><b>35%</b><span>Increase in search visibility</span></div>
+          </div>
+          <figure class="cs-shot">
+            <img src="/images/cases/cs-vein.webp" alt="Increase in conversions for Vein Doctors Sydney" loading="lazy">
+            <figcaption>Conversions twelve months after the campaign began.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-panel" id="cs-crown">
+      <div class="cs-grid">
+        <div>
+          <p class="cs-meta" style="margin-bottom:10px">Hair transplant &middot; Sydney and Melbourne &middot; 6 months</p>
+          <h3 class="cs-title">Nine patients a week to twenty eight, in one of the most expensive niches there is.</h3>
+          <div class="cs-body">
+            <p>Hair transplant is a knife fight. Clicks are costly, competitors are aggressive, and the patient will research for months before they commit to anyone.</p>
+            <p>Crown Clinic needed to own the organic results rather than rent the top of the page forever. We took the site apart, rebuilt it for conversion, and went after the Sydney and Melbourne procedure terms directly.</p>
+          </div>
+          <blockquote class="cs-quote">Enquiries have gone crazy and the number has increased three fold ever since they started six months ago. They are very thorough and results driven. We would highly recommend them.
+            <footer>James Nadin, Chief Executive, ICCM and Crown Clinic</footer></blockquote>
+        </div>
+        <div>
+          <div class="cs-metrics">
+            <div class="cs-metric"><b>300%</b><span>Increase in new patient numbers</span></div>
+            <div class="cs-metric"><b>603%</b><span>Increase in leads</span></div>
+            <div class="cs-metric"><b>152%</b><span>Increase in total traffic</span></div>
+            <div class="cs-metric"><b>89%</b><span>Increase in organic traffic</span></div>
+          </div>
+          <figure class="cs-shot">
+            <img src="/images/cases/cs-crown.webp" alt="Organic search results for hair transplant Sydney" loading="lazy">
+            <figcaption>Organic rankings for the hair transplant Sydney terms.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-panel" id="cs-mehta">
+      <div class="cs-grid">
+        <div>
+          <p class="cs-meta" style="margin-bottom:10px">Hair transplant and aesthetics &middot; Mumbai &middot; 12 months</p>
+          <h3 class="cs-title">Five procedures a month to fifty, and a team that went from three to eighteen.</h3>
+          <div class="cs-body">
+            <p>This is the one we point to when somebody asks whether SEO can change the shape of a business rather than just its traffic chart.</p>
+            <p>Dr Malay Mehta's clinic was strong clinically and quiet commercially. Twelve months of keyword research, rebuilt procedure pages, review generation and local search work later, the surgical list had grown ten fold and he had hired fifteen more people to cope.</p>
+          </div>
+          <blockquote class="cs-quote">Website conversion rate increased from 1.94% to 4.91%. Surgical operations expanded from 5 to 50 monthly procedures, and clinic staff grew from 3 to 18 members.
+            <footer>Recorded results, Dr Malay Mehta Aesthetic Clinic</footer></blockquote>
+        </div>
+        <div>
+          <div class="cs-metrics">
+            <div class="cs-metric"><b>1,277%</b><span>Increase in organic traffic</span></div>
+            <div class="cs-metric"><b>683%</b><span>More enquiries from organic search</span></div>
+            <div class="cs-metric"><b>376%</b><span>Increase in total enquiries</span></div>
+            <div class="cs-metric"><b>10x</b><span>Growth in monthly procedures</span></div>
+          </div>
+          <figure class="cs-shot">
+            <img src="/images/cases/cs-mehta.webp" alt="Traffic and conversion growth for Dr Malay Mehta" loading="lazy">
+            <figcaption>Traffic and conversion growth year on year.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="band band-white" id="proof">
+  <div class="wrap">
+    <div class="band-head rv">
+      <p class="eyebrow">What the surgeons say</p>
+      <h2>Not one of these people was paid to say it.</h2>
+    </div>
+  </div>
+  <div class="wrap-wide">
+    <div class="tgrid rv">
+      <div class="tcard">
+        <p>They have methodically transformed my digital presence and my sales have gone through the roof. I have not been disappointed and to be honest, they have exceeded my expectations.</p>
+        <cite><b>Dr Geoff Cashion</b>Owner, Vasectomy Australia</cite>
+      </div>
+      <div class="tcard">
+        <p>This team knows what they are doing and charge a fair price for such high level work. When you hire Online Marketing for Doctors, you are leveraging a team of experts in their field. I will be a raving fan for many years to come.</p>
+        <cite><b>Dr Adrian Couzner</b>Director and Principal Chiropractor, CHIRO H3</cite>
+      </div>
+      <div class="tcard">
+        <p>Every time she has the opportunity to go with a more expensive version, she always recommends the cheaper version, which is very assuring and a lot different from what my experience has been in the past.</p>
+        <cite><b>Dr Naveen Somia</b>MBBS PhD FRACS, Plastic Surgeon</cite>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:clamp(34px,5vw,58px)">
+    <div class="cs-grid rv" style="align-items:center">
+      <div>
+        <p class="eyebrow">Watch</p>
+        <h3 style="margin-bottom:16px">Crown Clinic went from nine patients a week to twenty eight.</h3>
+        <p style="color:#5C6663">James Nadin runs ICCM and Crown Clinic. He explains what changed, in his own words and without our help.</p>
+      </div>
+      <button class="tvideo" data-yt="4NMDRYg8IF4" aria-label="Play the Crown Clinic testimonial video">
+        <img src="/images/21-tablet-review.webp" alt="">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL BREAK 2 ============ -->
+<section class="band tbreak">
+  <div class="tbreak-bg"><img src="/images/14-waiting-room.webp" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <blockquote class="tquote rv">
+      <p>We have gone from having 12 enquiries to anywhere from 50 to 100 enquiries in a month, while consistently filling our list times at the hospital.</p>
+      <cite><b>Dr Michael Yunaev</b>Cosmetic Surgeon, Specialist Breast (Oncoplastic)</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ COMPLIANCE ============ -->
+<section class="band band-white">
+  <div class="wrap">
+    <div class="cs-grid" style="align-items:start">
+      <div class="rv">
+        <p class="eyebrow">Compliance</p>
+        <h2>Written to the rules from the first draft, not corrected after a complaint.</h2>
+        <p style="color:#5C6663; margin-top:18px">Most agencies learn medical advertising rules the hard way, using your clinic as the classroom. We have worked under AHPRA, the GMC, the ASA and HIPAA since 2011, and the constraints are built into how we write rather than checked at the end.</p>
+        <p style="color:#5C6663">It matters more than it sounds. A page that breaches guidance does not just get pulled. It takes its rankings with it, and rebuilding that authority takes months you cannot afford.</p>
+      </div>
+      <div class="rv">
+        <figure style="margin:0 0 30px; box-shadow:var(--shadow-media)">
+          <img src="/images/17-consultant-portrait.webp" alt="A consultant surgeon photographed in a modern clinic" loading="lazy">
+        </figure>
+        <div class="comp">
+          <div class="comp-item"><b>GMC &amp; ASA</b><p>UK advertising standards for medical practitioners, including the rules on claims, comparisons and patient testimonials.</p></div>
+          <div class="comp-item"><b>GDPR</b><p>Lawful data capture, consent and retention across every form, funnel and tracking script we install.</p></div>
+          <div class="comp-item"><b>AHPRA &amp; TGA</b><p>Australian advertising guidelines, for clinics operating there or considering expansion.</p></div>
+          <div class="comp-item"><b>HIPAA</b><p>US privacy requirements where a clinic treats or markets to American patients.</p></div>
+        </div>
+        <p style="margin-top:30px; font-size:15.5px; color:#5C6663; padding-top:22px; border-top:1px solid var(--hairline)">
+          On guarantees, we will be blunt. No honest agency can promise you a specific position on Google, because nobody controls the algorithm. Anyone who does promise it is either inexperienced or lying to you. We show case studies instead.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIT ============ -->
+<section class="band band-grey">
+  <div class="wrap">
+    <div class="band-head rv">
+      <p class="eyebrow">Before you book</p>
+      <h2>This is not for every clinic, and we would rather say so now.</h2>
+      <p>We take two new clinics a month. That is not a scarcity trick, it is how many campaigns our team can launch properly without the existing clients noticing. So the fit has to be right both ways.</p>
+    </div>
+    <div class="fit rv">
+      <div class="fit-col fit-yes">
+        <h3>Worth a conversation if</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>You have a procedure with real margin and want to be the obvious choice for it in your city</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Somebody answers the phone properly and follows up, because we can fill the pipeline but we cannot take the call</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>You can commit for twelve months, which is how long building this properly actually takes</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>You have capacity to treat the patients. When you pray for rain you have to deal with the mud</span></li>
+        </ul>
+      </div>
+      <div class="fit-col fit-no">
+        <h3>Probably not, if</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span>You want to be number one by Friday. It does not work that way and we will not pretend otherwise</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span>You are looking for the cheapest quote. There is always someone cheaper and you have probably already met them</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span>You want us to promise a fixed position on Google in writing, which no honest agency can do</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Nothing on the site can change. If the site cannot be touched, the rankings will not move either</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="band band-white" id="faq">
+  <div class="wrap">
+    <div class="band-head rv">
+      <span class="script">FAQ</span>
+      <h2 style="margin-top:6px">The questions everyone asks on the call.</h2>
+    </div>
+    <div class="faq rv">
+      <details open><summary>How long before I see anything?</summary><div class="faq-a">
+        <p>It depends where you are starting. If the site has some history and authority, movement usually shows in the first three months and meaningful enquiry growth from month four onwards. If we are building from nothing, the infrastructure alone takes the first couple of months before rankings start to respond.</p>
+        <p>Anybody quoting you a faster timeline is either guessing or selling something they cannot deliver.</p></div></details>
+      <details><summary>How much does medical SEO cost?</summary><div class="faq-a">
+        <p>It depends on the competitiveness of your procedures, how many locations you run, the current state of the site and how fast you want to move. A single site clinic targeting one procedure in one city is a very different job from a group with four locations going after facelifts in central London.</p>
+        <p>Be wary of any agency publishing a fixed price list for SEO. It means they are running the same template over every business regardless of what it needs. We will give you a real number on the call once we have looked at your market.</p></div></details>
+      <details><summary>Can you guarantee I will rank number one?</summary><div class="faq-a">
+        <p>No, and neither can anybody else. Nobody outside Google controls the algorithm, and any agency putting a specific position in writing is telling you something they cannot know.</p>
+        <p>What we can show you is a decade of case studies in your sector with the clinics named and the numbers attached, which is a considerably better basis for a decision than a promise.</p></div></details>
+      <details><summary>Do you use private blog networks or anything that could get me penalised?</summary><div class="faq-a">
+        <p>Never. Not once, in fourteen years. PBNs are the cheap shortcut most of this industry quietly relies on, and when Google finds them the site does not slip a few places, it disappears.</p>
+        <p>We build links through genuine placements on real publications. It is slower, it costs more, and it does not evaporate the moment an algorithm updates.</p></div></details>
+      <details><summary>Will my website need to change?</summary><div class="faq-a">
+        <p>Almost certainly, yes. In most of the case studies on this page the site was rebuilt or substantially rewritten, because the conversion rate was the real constraint rather than the traffic.</p>
+        <p>Sending more visitors to a page that does not convert is the most expensive mistake in this whole discipline. We fix that first.</p></div></details>
+      <details><summary>What about ChatGPT and AI Overviews?</summary><div class="faq-a">
+        <p>It is already changing where enquiries come from. Patients ask an assistant which clinic to use and act on the answer without ever seeing a traditional results page.</p>
+        <p>The work that earns those citations is closely related to good organic SEO, genuine authority, thorough content and clean structured data, but it is not identical. It is included in what we do, and the AI search section above shows current examples for our clients.</p></div></details>
+      <details><summary>We rely on GP and consultant referrals. Is this relevant to us?</summary><div class="faq-a">
+        <p>More than you would expect. Referred patients still look you up before they book, and what they find decides whether the referral converts or quietly evaporates.</p>
+        <p>A strong search presence also wins you the patients who never got a referral in the first place, which is a channel most referral led practices leave entirely to their competitors.</p></div></details>
+      <details><summary>Who actually does the work?</summary><div class="faq-a">
+        <p>Our own team, never outsourced. You get a named account manager who knows your market, and the same specialists working on your campaign month after month.</p>
+        <p>Read the testimonials on this page and you will notice something unusual. Clients name the individuals. That does not happen when the work is being passed around.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="band band-dark" id="book" style="position:relative; overflow:hidden">
+  <div style="position:absolute; inset:0; z-index:0; opacity:.22">
+    <img src="/images/13-london-dusk.webp" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy">
+  </div>
+  <div class="wrap" style="position:relative; z-index:1">
+    <div class="book">
+      <div class="rv">
+        <p class="eyebrow">Book a free strategy call</p>
+        <h2>Thirty minutes. No deck, no junior with a headset.</h2>
+        <p style="margin-top:18px">You will speak to someone who has run campaigns in your speciality. Before the call we look at your site, your rankings and the two or three clinics taking the searches you should be getting.</p>
+        <ul class="book-list">
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Where you currently rank for the procedures that matter, and what it is costing you</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Which competitors are taking your searches and the specific gap to close</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Whether your site would convert the traffic if we sent it tomorrow</span></li>
+          <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>A realistic timeline and a real number, or an honest no if we are not the right fit</span></li>
+        </ul>
+        <p style="margin-top:26px; font-size:15.5px; color:#9AA5A2">We take on two new clinics a month. If this month is full we will tell you on the call rather than after the invoice.</p>
+        <p style="margin-top:20px"><a class="hdr-tel" style="font-size:21px" href="tel:+442045722823">+44 20 4572 2823</a></p>
+      </div>
+      <div class="rv">
+        <div class="book-embed">
+          <iframe id="bookingFrame" src="https://api.leadconnectorhq.com/widget/booking/ZUr6RUuzDbySvoYkMU4m"
+            title="Book a free strategy call with Online Marketing For Doctors" scrolling="no" loading="lazy"></iframe>
+        </div>
+        <p style="margin:18px 0 0; font-size:15px; color:#9AA5A2">
+          Calendar not loading? <a href="https://onlinemarketingfordoctors.com/strategy-call-booking/"
+          style="color:var(--omd-green)">Book on our main site</a> or call
+          <a href="tel:+442045722823" style="color:var(--omd-green)">+44 20 4572 2823</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-in">
+      <div>
+        <img src="/brand/logo-omd-white.svg" alt="Online Marketing For Doctors">
+        <p style="max-width:40ch">A medical marketing agency, and only a medical marketing agency, since 2011. Clinics on five continents.</p>
+      </div>
+      <div>
+        <h4>On this page</h4>
+        <a href="#problem">The problem</a>
+        <a href="#process">How it works</a>
+        <a href="#results">SEO results</a>
+        <a href="#ai-search">AI search results</a>
+        <a href="#cases">Case studies</a>
+        <a href="#faq">FAQs</a>
+      </div>
+      <div>
+        <h4>Talk to us</h4>
+        <a href="tel:+442045722823">+44 20 4572 2823</a>
+        <a href="mailto:contactus@onlinemarketingfordoctors.com">contactus@onlinemarketingfordoctors.com</a>
+        <p style="margin-top:14px; line-height:1.6">19 Portland Place<br>London W1B 1PX<br>United Kingdom</p>
+      </div>
+    </div>
+    <div class="ftr-btm">
+      <span>&copy; <span id="yr"></span> Online Marketing For Doctors. All rights reserved.</span>
+      <span>Results shown are actual client results and are not a guarantee of future performance.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/medical-seo/results-data.js"></script>
+<script>
+(function(){
+  "use strict";
+  var d = document;
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- date + year ---- */
+  var t = new Date();
+  var el = d.getElementById('today');
+  if (el) el.textContent = t.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  d.getElementById('yr').textContent = t.getFullYear();
+
+  /* ---- press marquee ---- */
+  var logos = ['forbes-logo-2.webp','business-insider-logo-2.webp','daily-mail-uk-logo.png','msn-logo-1.webp',
+    'mashable-logo.webp','Yahoo_Finance_logo.webp','entrepreneur-logo.png','usa-today-logo.webp',
+    'herald-sun.png','smart-company-logo-1.png','thrive-global-logo.png','globe-mail-canada-logo.webp',
+    'new-york-weekly.webp','marketing-mag-logo.webp'];
+  var track = d.getElementById('pressTrack');
+  if (track){
+    var html = logos.map(function(f){
+      return '<img src="/brand/featured-in/'+f+'" alt="" loading="lazy">';
+    }).join('');
+    track.innerHTML = html + html;
+  }
+
+  /* ---- sticky header ---- */
+  var hdr = d.getElementById('hdr');
+  function onScroll(){ hdr.classList.toggle('solid', window.scrollY > 40); }
+  onScroll(); addEventListener('scroll', onScroll, {passive:true});
+
+  /* ---- mobile drawer ---- */
+  var drawer = d.getElementById('drawer'), menuBtn = d.getElementById('menuBtn'), closeBtn = d.getElementById('closeBtn');
+  function setDrawer(open){
+    drawer.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    d.body.style.overflow = open ? 'hidden' : '';
+    if (open) { var f = drawer.querySelector('a'); if (f) f.focus(); } else { menuBtn.focus(); }
+  }
+  menuBtn.addEventListener('click', function(){ setDrawer(true); });
+  closeBtn.addEventListener('click', function(){ setDrawer(false); });
+  drawer.addEventListener('click', function(e){ if (e.target.tagName === 'A') setDrawer(false); });
+  d.addEventListener('keydown', function(e){ if (e.key === 'Escape' && drawer.classList.contains('open')) setDrawer(false); });
+
+  /* ---- results sliders ---- */
+  function buildSlider(key, tabsId, slidesId, countId){
+    var data = (window.OMD_RESULTS || {})[key] || [];
+    var tabsEl = d.getElementById(tabsId), slidesEl = d.getElementById(slidesId), countEl = d.getElementById(countId);
+    if (!tabsEl || !slidesEl || !data.length) return;
+    tabsEl.innerHTML = data.map(function(g, i){
+      return '<button class="tab" role="tab" aria-selected="'+(i===0)+'" data-i="'+i+'">'+g.v+'</button>';
+    }).join('');
+    function render(i){
+      var g = data[i];
+      slidesEl.innerHTML = g.i.map(function(s){
+        return '<div class="slide"><figure><img src="'+s.s+'" alt="'+s.c.replace(/"/g,'&quot;')+'" loading="lazy">'
+          + '<figcaption><span class="slide-client">'+s.cl+'</span>'+s.c+'</figcaption></figure></div>';
+      }).join('');
+      slidesEl.scrollLeft = 0;
+      countEl.textContent = g.i.length + ' examples';
+    }
+    tabsEl.addEventListener('click', function(e){
+      var b = e.target.closest('.tab'); if (!b) return;
+      tabsEl.querySelectorAll('.tab').forEach(function(x){ x.setAttribute('aria-selected','false'); });
+      b.setAttribute('aria-selected','true');
+      render(+b.dataset.i);
+    });
+    render(0);
+  }
+  buildSlider('seo','seoTabs','seoSlides','seoCount');
+  buildSlider('ai','aiTabs','aiSlides','aiCount');
+
+  d.querySelectorAll('.snav').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var s = d.getElementById(btn.dataset.slider);
+      var card = s.querySelector('.slide');
+      var step = card ? card.getBoundingClientRect().width + 24 : 400;
+      s.scrollBy({left: step * +btn.dataset.dir, behavior: reduce ? 'auto' : 'smooth'});
+    });
+  });
+
+  /* ---- case study tabs ---- */
+  var csNav = d.querySelector('.cs-nav');
+  if (csNav){
+    csNav.addEventListener('click', function(e){
+      var b = e.target.closest('button[data-cs]'); if (!b) return;
+      csNav.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-selected','false'); });
+      b.setAttribute('aria-selected','true');
+      d.querySelectorAll('.cs-panel').forEach(function(p){ p.classList.remove('on'); });
+      var panel = d.getElementById('cs-' + b.dataset.cs);
+      if (panel) panel.classList.add('on');
+    });
+  }
+
+  /* ---- video facade ---- */
+  d.querySelectorAll('.tvideo').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.dataset.yt;
+      btn.innerHTML = '<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0" '
+        + 'title="Client testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    });
+  });
+
+  /* ---- reveal on scroll ---- */
+  if (!reduce && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.05});
+    d.querySelectorAll('.rv').forEach(function(n){ io.observe(n); });
+  } else {
+    d.querySelectorAll('.rv').forEach(function(n){ n.classList.add('in'); });
+  }
+
+  /* ---- GHL booking iframe autoresize ---- */
+  addEventListener('message', function(e){
+    if (!/leadconnectorhq\.com$/.test(new URL(e.origin).hostname)) return;
+    var data = e.data;
+    if (data && data.type === 'msgsndr:setHeight' && typeof data.height === 'number'){
+      var f = d.getElementById('bookingFrame');
+      if (f) f.style.height = data.height + 'px';
+    }
+  });
+})();
+</script>
+</body>
+</html>
