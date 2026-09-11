@@ -1,0 +1,4 @@
+TITLE: 
+URL: https://kingkong.co/roi-calculator/
+---
+Host not in allowlist: kingkong.co. Add this host to your network egress settings to allow access. 

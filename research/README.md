@@ -10,6 +10,12 @@ to support landing page work.
   Filenames mirror URL slugs (`/` becomes `__`, homepage is `HOME.txt`).
   Each file starts with TITLE / META / URL. Shared nav and footer boilerplate has been stripped.
 - **`site-content-urls.txt`** — the full list of crawled URLs.
+- **`KINGKONG-VOICE-GUIDE.md`** — voice, tone and language analysis of kingkong.co, the
+  direct-response reference OMD's own copy is modelled on. Includes the page formula, sentence
+  mechanics, metaphor system, what to borrow, what is off-limits for a medical audience, and a
+  calibrated register for OMD.
+- **`kingkong-content/`** — plain-text extract of all 95 kingkong.co pages.
+- **`kingkong-urls.txt`** — the full list of crawled King Kong URLs.
 
 ## Scope
 

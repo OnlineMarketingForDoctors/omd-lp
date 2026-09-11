@@ -1,0 +1,34 @@
+TITLE: Calculator: QG ROAS Calculator - King Kong
+URL: https://kingkong.co/qg-calculator/
+---
+1-888-303-8580
+### ROI For {{ clientType }} Based Businesses
+### Client Type
+Lead Generation eCommerce
+### Traffic Type
+Paid Organic
+### Project Type
+Landing Page Sales Funnel Website
+{{ inputs[input].description }}
+{{ inputs[input].title }}
+{{ formatValue(inputs[input].currentValue,inputs[input].numberFormat,
+inputs[input].decimalPlaces) }}
+### Based on these numbers, here is what you could expect for return on investment*
+### Based on the data entered, these are the results that need to be achieved to attain the target ROAS.
+Metrics unavailable for this filter.
+### {{ calculate[output].title }}
+{{ formatValue(+calculate[output].calc(),calculate[output].numberFormat,calculate[output].decimalPlaces)}}
+Target ROAS
+ROAS scale unavailable for this filter.
+### {{ roasScale[output].title }}
+{{formatValue(+roasScale[output].calc(),roasScale[output].numberFormat,roasScale[output].decimalPlaces)}}
+Show Profit Margin
+Show ROAS Scale
+The information calculated from the King Kong ROI Calculator is
+intended for use by you as a guide ONLY. The calculations produced by the King Kong ROI
+Calculator do not in any way represent guaranteed results, and the calculations have no
+legal effect on any contracts entered into by you (‘the Client’) with King Kong. The
+figures and formulae used within the King Kong ROI Calculator may change at any time
+without notice. King Kong accepts no responsibility for any losses arising from any use
+or reliance upon any calculations or conclusions reached by using the King Kong ROI
+Calculator.
