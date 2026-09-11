@@ -1,0 +1,19 @@
+TITLE: Sales Funnel Webinar Replay | Online Marketing For Doctors
+META: Discover 3 must-use strategies to attract new patients! It will offer proven methods for practice growth. Level up your outreach today!
+URL: https://onlinemarketingfordoctors.com/3-must-use-strategies-to-generate-new-patients-replay/
+---
++61 2 9191 7388 Call Menu
+### 3 MUST-USE STRATEGIES THAT WILL GENERATE NEW PATIENTS & REFERRALS & BUILD UP YOUR REPUTATION ON AUTO PILOT
+Download the webinar workbook here:
+www.onlinemarketingfordoctors.com/webinar-workbook/
+Can I have the slides?
+www.onlinemarketingfordoctors.com/sales-funnel-webinar/slides/
+SPECIAL OFFER FOR TODAY’S WEBINAR ATTENDEES
+If you sign up to our signature online course Automated Webinar Sales Funnel
+while we are in this webinar, you will receive;
+- 20% OFF (equals to $US 200 OFF) – Use Promo Code AWSF20% when you check out
+- Webinar Slide Deck Template (Value $500)
+A Total value of $700 saved
+If you sign up right now before this webinar ends
+Sign Up Now
+var replay = document.getElementById(“replay”);replay.addEventListener(“timeupdate”, function(){if(this.currentTime >= 4063) {jQuery(‘.offer’).show(500);jQuery(‘.not-offer’).hide(500);}});
