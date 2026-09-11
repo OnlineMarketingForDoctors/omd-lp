@@ -131,22 +131,25 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
 .hero-note{font-size:13.5px; color:var(--muted); margin:16px 0 0; line-height:1.45}
 .hero-mobile-img{display:none}
 
-/* badges + press strip inside the hero */
+/* credential chips + press strip inside the hero */
 .hero-badges{position:absolute; right:max(var(--gutter),calc((100vw - 1440px)/2 + var(--gutter)));
-  bottom:calc(100% - 100svh + 128px); z-index:3; display:flex; align-items:center; gap:18px}
-.hero-badges img{display:block}
-.hero-badges .b-reviews{height:52px; width:auto}
-.hero-badges .b-partner{height:66px; width:auto}
-.hero-badge-sep{width:1px; height:44px; background:rgba(255,255,255,.22)}
-.hero-badges figure{margin:0; display:flex; flex-direction:column; align-items:center; gap:7px}
-.hero-badges figcaption{font-family:var(--font-action); font-size:10.5px; letter-spacing:1.4px;
-  text-transform:uppercase; color:#C7D0CD; white-space:nowrap}
+  bottom:calc(100% - 100svh + 136px); z-index:3; display:flex; align-items:stretch; gap:12px}
+.cred{display:flex; align-items:center; gap:13px; padding:12px 18px; min-height:64px;
+  background:rgba(0,0,0,.58); border:1px solid rgba(255,255,255,.18);
+  -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px)}
+.cred-ico{flex:none; display:flex; align-items:center}
+.cred-stars{display:flex; gap:2px}
+.cred-stars svg{width:15px; height:15px; fill:#FBBC04}
+.cred b{display:block; font-size:14.5px; font-weight:500; color:var(--white); line-height:1.15;
+  white-space:nowrap}
+.cred i{display:block; font-style:normal; font-family:var(--font-action); font-size:10.5px;
+  letter-spacing:1.5px; text-transform:uppercase; color:#9AA5A2; margin-top:5px; white-space:nowrap}
+
 
 .hero-press{position:relative; z-index:2; margin-top:auto;
   background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.8) 42%,rgba(0,0,0,.92));
-  padding:20px 0 22px; border-top:1px solid rgba(255,255,255,.1)}
-.hero-press .press-label{color:#8E9996; margin-bottom:14px}
-.hero-press .press-track img{height:26px; opacity:.8; filter:grayscale(1) brightness(0) invert(1)}
+  padding:24px 0 26px; border-top:1px solid rgba(255,255,255,.1)}
+.hero-press .press-track img{height:36px; opacity:.82; filter:grayscale(1) brightness(0) invert(1)}
 
 /* ---------- bands ---------- */
 .band{padding-block:clamp(64px,9vw,110px); position:relative}
@@ -165,7 +168,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
 .press{background:var(--white); padding-block:44px; border-bottom:1px solid var(--hairline)}
 .press-label{font-family:var(--font-action); font-size:12px; letter-spacing:3px; text-transform:uppercase;
   color:#98A2A0; text-align:center; margin-bottom:26px}
-.press-track{display:flex; gap:56px; align-items:center; width:max-content; animation:marquee 46s linear infinite}
+.press-track{display:flex; gap:64px; align-items:center; width:max-content; animation:marquee 46s linear infinite}
 .press-mask{overflow:hidden; mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .press-track img{height:28px; width:auto; filter:grayscale(1); opacity:.55; flex:none}
 @keyframes marquee{to{transform:translateX(-50%)}}
@@ -442,9 +445,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
   .hero-points li{font-size:15.5px}
 }
 @media (max-width:1240px){
-  .hero-badges{bottom:126px; gap:14px}
-  .hero-badges .b-reviews{height:46px}
-  .hero-badges .b-partner{height:56px}
+  .hero-badges{gap:10px}
+  .cred{padding:11px 14px; gap:11px; min-height:60px}
 }
 @media (max-width:900px){
   .hero{padding-block:0 0}
@@ -453,10 +455,10 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
 }
 @media (max-width:640px){
   :root{--gutter:18px}
-  .hero-badges{gap:12px}
-  .hero-badges .b-reviews{height:40px}
-  .hero-badges .b-partner{height:48px}
-  .hero-press .press-track img{height:20px}
+  .hero-badges{gap:10px}
+  .cred{padding:10px 13px; gap:10px; min-height:56px}
+  .cred b{font-size:13px}
+  .hero-press .press-track img{height:26px}
   .btn{padding:18px 26px; font-size:15px; letter-spacing:1.4px; width:100%}
   .hdr-mobile-cta{width:auto}
   .slide{flex:0 0 86vw}
@@ -555,17 +557,31 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
   </div>
 
   <div class="hero-badges">
-    <img class="b-reviews" src="/images/badges/badge-google-reviews.webp"
-         alt="Google rating 5.0 out of 5 stars" loading="eager" width="230" height="64">
-    <span class="hero-badge-sep" aria-hidden="true"></span>
-    <figure>
-      <img class="b-partner" src="/images/badges/badge-google-partner.webp" alt="" loading="eager" width="160" height="120">
-      <figcaption>Certified Google Partner</figcaption>
-    </figure>
+    <div class="cred">
+      <span class="cred-ico" aria-hidden="true">
+        <span class="cred-stars">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </span>
+      </span>
+      <span><b>5.0 out of 5</b><i>Google reviews</i></span>
+    </div>
+    <div class="cred">
+      <span class="cred-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#00DB98" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2.5 14.4 5l3.4-.2.5 3.4 2.8 2-1.6 3 1.6 3-2.8 2-.5 3.4-3.4-.2L12 21.5 9.6 19l-3.4.2-.5-3.4-2.8-2 1.6-3-1.6-3 2.8-2L6.2 4.8 9.6 5z"/>
+          <path d="m8.6 12 2.4 2.4 4.4-4.6"/>
+        </svg>
+      </span>
+      <span><b>Certified</b><i>Google Partner</i></span>
+    </div>
   </div>
 
   <div class="hero-press">
-    <p class="press-label">The work has been covered in</p>
     <div class="press-mask">
       <div class="press-track" id="pressTrack"></div>
     </div>
@@ -1323,8 +1339,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
   /* ---- press marquee ---- */
   var logos = ['forbes-logo-2.webp','business-insider-logo-2.webp','daily-mail-uk-logo.png','msn-logo-1.webp',
     'mashable-logo.webp','Yahoo_Finance_logo.webp','entrepreneur-logo.png','usa-today-logo.webp',
-    'herald-sun.png','smart-company-logo-1.png','thrive-global-logo.png','globe-mail-canada-logo.webp',
-    'new-york-weekly.webp','marketing-mag-logo.webp'];
+    'herald-sun.png','smart-company-logo-1.png','thrive-global-logo.png',
+    'new-york-weekly.webp','marketing-mag-logo.webp','technology-org-logo.webp'];
   var track = d.getElementById('pressTrack');
   if (track){
     var html = logos.map(function(f){
