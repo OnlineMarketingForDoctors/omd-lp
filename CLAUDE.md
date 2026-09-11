@@ -32,8 +32,12 @@ visual work.
 ## Layout
 
 ```
+css/omd.css           the shared design system: tokens, base type, buttons,
+                      bands, reveal. Every page links it. A change here
+                      changes every page.
 medical-seo/          the Medical SEO landing page (reference implementation)
-  index.html          page + inline <style>; the design system lives here
+  index.html          page-specific component CSS only, in an inline <style>
+                      that loads after css/omd.css and may override it
   results-data.js     window.OMD_RESULTS, 195 curated screenshots
 images/               generated imagery, WebP
 results/seo/          385 client ranking screenshots + index.csv manifests

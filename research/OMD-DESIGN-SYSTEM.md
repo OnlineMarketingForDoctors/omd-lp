@@ -1,8 +1,15 @@
 # OMD landing page design system
 
-The reference implementation is `medical-seo/index.html`. Everything below is
-extracted from it. When the two disagree, the page wins and this file should be
-corrected.
+The shared layer lives in **`css/omd.css`**, which every page links before its
+own `<style>` block: the tokens, reset, type scale, text utilities, buttons and
+focus ring, bands and `.eyebrow`, the `.rv` reveal, the base responsive steps
+and the reduced-motion block. Page-specific component CSS stays in the page and
+may override it. `medical-seo/index.html` is the reference implementation.
+
+Everything below is extracted from those two. When they disagree with this
+file, the code wins and this file should be corrected. A change to `omd.css`
+changes every page in the repo, so make it here deliberately or make it in the
+page instead.
 
 Read this together with `research/KINGKONG-VOICE-GUIDE.md` (how the copy
 sounds) and `research/OMD-BRAND-KNOWLEDGE.md` (what is true about the agency
@@ -136,7 +143,17 @@ rotated -1.4deg, capped at 22ch, with a short green rule above it. Used three
 times across the page. It is an aside in her voice, not a heading style and
 not a pull quote. Four or five instances would be too many.
 
-### 3.5 Motion
+### 3.5 Navigation into evidence
+
+Where a list names things the page can prove, make each item a way in rather
+than a label. The who-we-work-with grid is twenty linked tiles: the photo fills
+the tile behind a gradient scrim, the speciality sits over it, and on hover the
+name lifts to make room for "See results". Hover effects sit behind
+`@media (hover:hover)` so touch devices are not left in a stuck state, and the
+same rules are bound to `:focus-visible` for keyboard use. The tile is a link
+either way, so nothing depends on hover being available.
+
+### 3.6 Motion
 
 One reveal (`.rv`) on scroll, hover only on genuinely interactive things.
 `prefers-reduced-motion` is respected and must stay respected.
@@ -168,6 +185,9 @@ removed from `medical-seo/index.html` and should not come back.
 
 1. Load the `frontend-design` skill (`.claude/skills/frontend-design/`) before
    any visual work.
+2. Decide which layer a change belongs in. Something true of every OMD landing
+   page goes in `css/omd.css`; something true only of this page stays in the
+   page. When in doubt, keep it in the page.
 2. Serve locally (`python3 -m http.server 8080` from the repo root) and
    screenshot with Playwright at 1440 and 390 before committing. Chromium is at
    `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
