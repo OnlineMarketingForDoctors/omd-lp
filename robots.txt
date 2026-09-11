@@ -1,0 +1,10 @@
+# This site is permanently excluded from search indexes.
+#
+# IMPORTANT: crawling is deliberately ALLOWED below. Do not add "Disallow: /".
+# A Disallow rule would stop crawlers fetching these pages, which means they
+# would never see the "X-Robots-Tag: noindex" header (set in vercel.json) or
+# the noindex meta tag. A blocked-but-linked URL can still be indexed by Google
+# from external links alone. Allowing the crawl is what makes the noindex work.
+
+User-agent: *
+Allow: /
