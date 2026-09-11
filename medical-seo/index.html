@@ -12,7 +12,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Oswald:wght@400;500&family=Kaushan+Script&display=swap">
 <link rel="stylesheet" href="/css/omd.css">
-<script src="/js/reveal.js" defer></script>
 <style>
 
 /* ---------- header ---------- */
@@ -20,7 +19,7 @@
   padding:18px 0; background:transparent}
 .hdr.solid{background:var(--black); box-shadow:var(--shadow-nav)}
 .hdr-in{display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:28px;
-  max-width:1440px; margin:0 auto; padding-inline:24px}
+  max-width:1440px; margin:0 auto; padding-inline:var(--gutter)}
 .hdr-logo{flex:none; line-height:0}
 .hdr-logo img{height:78px; width:auto; max-width:none; transition:height .3s ease}
 .hdr.solid .hdr-logo img{height:46px}
@@ -66,10 +65,7 @@
 .hero-col{max-width:660px; color:var(--white); width:100%}
 .hero-kicker{font-family:var(--font-action); font-size:14px; letter-spacing:3px; text-transform:uppercase;
   color:var(--omd-green); margin-bottom:20px}
-.hero h1{color:var(--white); margin-bottom:24px;
-  font-size:clamp(2.3rem,4.3vw,4rem); line-height:1.02; letter-spacing:-.032em}
-.hero-rule{margin-bottom:22px; width:4.5rem}
-
+.hero h1{color:var(--white); margin-bottom:24px}
 .hero-points{list-style:none; margin:0 0 28px; padding:0; display:grid; gap:9px}
 .hero-points li{display:grid; grid-template-columns:22px 1fr; gap:12px; align-items:start;
   font-size:16px; line-height:1.45; color:#EDF2F0}
@@ -181,35 +177,20 @@
 .fig-row span{font-size:15.5px; line-height:1.45; color:#9AA5A2}
 
 /* ---------- process ---------- */
-.proc-grid{display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
-  gap:clamp(2.5rem,6vw,7rem); align-items:start}
-
-.proc{position:relative; padding-left:clamp(3.4rem,5vw,5.4rem)}
-.proc-thread{position:absolute; left:clamp(1.1rem,1.7vw,1.9rem); top:.6rem; bottom:.6rem;
-  width:1px; background:var(--hairline)}
-.proc-thread-fill{position:absolute; inset:0; background:var(--omd-green);
-  transform:scaleY(0); transform-origin:top center}
-.proc-item{position:relative; padding-block:clamp(1.5rem,2.4vw,2.3rem);
+.proc{display:block}
+.proc-item{display:grid; grid-template-columns:clamp(62px,7vw,116px) minmax(180px,1fr) 2.1fr;
+  gap:clamp(18px,3vw,46px); align-items:start; padding:clamp(24px,3vw,36px) 0;
   border-top:1px solid var(--hairline)}
-.proc-item:first-of-type{border-top:0; padding-top:0}
-.proc-item .proc-num{position:absolute; left:calc(clamp(3.4rem,5vw,5.4rem) * -1); top:clamp(1.5rem,2.4vw,2.3rem);
-  width:clamp(2.2rem,3.4vw,3.8rem); text-align:center;
-  font-family:var(--font-action); font-size:.8125rem; letter-spacing:.12em; color:var(--ink-mute);
-  font-variant-numeric:tabular-nums}
-.proc-item:first-of-type .proc-num{top:0}
-.proc-item h3{margin:0 0 .55rem}
-.proc-item p{font-size:1rem; line-height:1.62; color:var(--ink-soft); margin:0; max-width:54ch}
-
-.proc-figure{margin:0}
-.proc-sticky{position:sticky; top:calc(var(--hdr) + 2rem)}
-.proc-img{aspect-ratio:4/5; box-shadow:var(--shadow-media)}
-.proc-caption{display:block; margin-top:1.1rem; color:var(--ink-mute); max-width:30ch}
-.proc-feature{margin-top:clamp(3.5rem,7vw,6.5rem); background:var(--black); color:var(--white);
+.proc-item .proc-num{font-size:clamp(34px,4.2vw,58px); font-weight:700; line-height:.8;
+  letter-spacing:-.05em; color:#C6CECB; margin:0; font-variant-numeric:tabular-nums}
+.proc-item h3{font-size:clamp(21px,2.3vw,28px); margin:0; line-height:1.12; letter-spacing:-.02em}
+.proc-item p{font-size:16.5px; line-height:1.6; color:#5C6663; margin:0; max-width:62ch}
+.proc-feature{margin-top:clamp(40px,5vw,72px); background:var(--black); color:var(--white); padding:0;
   display:grid; grid-template-columns:1fr 1fr; align-items:stretch}
-.proc-feature img{height:100%; object-fit:cover; min-height:320px}
-.proc-feature-txt{padding:clamp(2rem,4vw,4rem); display:flex; flex-direction:column; justify-content:center}
-.proc-feature-txt h3{margin-bottom:1rem}
-.proc-feature-txt .eyebrow{display:block; margin-bottom:1.1rem}
+.proc-feature img{height:100%; object-fit:cover; min-height:280px}
+.proc-feature-txt{padding:clamp(30px,4vw,52px); display:flex; flex-direction:column; justify-content:center}
+.proc-feature-txt h3{color:var(--white); margin-bottom:14px}
+.proc-feature-txt p{color:#CFD7D4; margin:0}
 
 /* ---------- tabs + slider ---------- */
 .tabs{display:flex; gap:8px; flex-wrap:nowrap; margin-bottom:28px; overflow-x:auto;
@@ -223,9 +204,9 @@
   cursor:pointer; white-space:nowrap; transition:background-color .15s, color .15s, border-color .15s}
 .tab:hover{border-color:var(--omd-green)}
 .tab[aria-selected="true"]{background:var(--black); color:var(--white); border-color:var(--black)}
-.bg-dark .tab{background:transparent; color:#CFD7D4; border-color:rgba(255,255,255,.22)}
-.bg-dark .tab:hover{border-color:var(--omd-green); color:var(--white)}
-.bg-dark .tab[aria-selected="true"]{background:var(--omd-green); color:var(--black); border-color:var(--omd-green)}
+.band-dark .tab{background:transparent; color:#CFD7D4; border-color:rgba(255,255,255,.22)}
+.band-dark .tab:hover{border-color:var(--omd-green); color:var(--white)}
+.band-dark .tab[aria-selected="true"]{background:var(--omd-green); color:var(--black); border-color:var(--omd-green)}
 .slider{position:relative}
 .slides{display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory;
   scroll-behavior:smooth; padding-bottom:18px; scrollbar-width:thin}
@@ -241,18 +222,18 @@
 .slide-region{font-family:var(--font-action); font-size:10px; letter-spacing:1.3px; text-transform:uppercase;
   color:#6E7A77; border:1px solid #D8DEDC; padding:2px 7px; margin-left:8px; white-space:nowrap}
 .slide-region.uk{color:var(--omd-green); border-color:var(--omd-green)}
-.bg-dark .slide-region{color:#8E9996; border-color:rgba(255,255,255,.25)}
-.bg-dark .slide-region.uk{color:var(--omd-green); border-color:var(--omd-green)}
+.band-dark .slide-region{color:#8E9996; border-color:rgba(255,255,255,.25)}
+.band-dark .slide-region.uk{color:var(--omd-green); border-color:var(--omd-green)}
 .slider-nav{display:flex; gap:10px; margin-top:20px; align-items:center}
 .snav{width:48px; height:48px; border:1px solid var(--hairline); background:var(--white);
   cursor:pointer; display:grid; place-items:center; transition:background-color .15s, border-color .15s}
 .snav:hover{background:var(--black); border-color:var(--black)}
 .snav svg{width:20px; height:20px; stroke:var(--ink); fill:none; stroke-width:2}
 .snav:hover svg{stroke:var(--white)}
-.bg-dark .snav{background:transparent; border-color:rgba(255,255,255,.25)}
-.bg-dark .snav svg{stroke:var(--white)}
-.bg-dark .snav:hover{background:var(--omd-green); border-color:var(--omd-green)}
-.bg-dark .snav:hover svg{stroke:var(--black)}
+.band-dark .snav{background:transparent; border-color:rgba(255,255,255,.25)}
+.band-dark .snav svg{stroke:var(--white)}
+.band-dark .snav:hover{background:var(--omd-green); border-color:var(--omd-green)}
+.band-dark .snav:hover svg{stroke:var(--black)}
 .slider-count{font-family:var(--font-action); font-size:13px; letter-spacing:1.6px; color:#8C9694; margin-left:8px}
 
 /* ---------- case studies ---------- */
@@ -326,7 +307,7 @@
 .comp-item{padding-top:20px; border-top:2px solid var(--omd-green)}
 .comp-item b{display:block; font-size:18px; font-weight:700; letter-spacing:-.015em; margin-bottom:9px}
 .comp-item p{font-size:15px; line-height:1.55; color:#5C6663; margin:0}
-.bg-dark .comp-item p{color:#B9C2BF}
+.band-dark .comp-item p{color:#B9C2BF}
 
 /* ---------- fit / qualification ---------- */
 .fit{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--hairline); box-shadow:var(--shadow-media)}
@@ -402,10 +383,10 @@
   .book{grid-template-columns:1fr}
   .proc-feature{grid-template-columns:1fr}
   .proc-feature img{min-height:230px}
-  .proc-grid{grid-template-columns:1fr; gap:2.5rem}
-  .proc-figure{order:-1}
-  .proc-sticky{position:static}
-  .proc-img{aspect-ratio:16/9}
+  .proc-item{grid-template-columns:clamp(48px,11vw,80px) 1fr; gap:0 18px}
+  .proc-item .proc-num{grid-column:1; grid-row:1 / span 2}
+  .proc-item h3{grid-column:2; grid-row:1}
+  .proc-item p{grid-column:2; grid-row:2; margin-top:9px}
   .figures{grid-template-columns:1fr}
   .tset{grid-template-columns:1fr}
 }
@@ -527,22 +508,21 @@
     <img src="/images/01-hero.webp" alt="" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-in">
-    <div class="hero-col" data-reveal-group>
-      <p class="hero-kicker" data-reveal>UK medical SEO for every speciality</p>
-      <span class="rule hero-rule" data-rule-reveal aria-hidden="true"></span>
-      <h1 data-reveal>Medical SEO that fills your diary, not just your rankings report.</h1>
-      <ul class="hero-points" data-reveal>
+    <div class="hero-col">
+      <p class="hero-kicker">UK medical SEO for every speciality</p>
+      <h1>Medical SEO that fills your diary, not just your rankings report.</h1>
+      <ul class="hero-points">
         <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Page one for the treatments that actually pay, not vanity keywords nobody searches</span></li>
         <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Found in Google, Google Maps and now ChatGPT and AI Overviews</span></li>
         <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Tracked from first click to booked patient, so you see what your money bought</span></li>
         <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>Written to GMC, ASA and GDPR rules from the first draft, never retrofitted</span></li>
         <li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg><span>A London team, healthcare only since 2011, across 19 specialities</span></li>
       </ul>
-      <div class="hero-cta" data-reveal>
+      <div class="hero-cta">
         <a class="btn btn-green" href="#book">Book a free strategy call</a>
         <a class="btn btn-primary" href="#results">See the proof first</a>
       </div>
-      <p class="hero-note" data-reveal>Free, 30 minutes, no pitch deck. We take on two new clinics a month, so if the diary is full we will tell you.</p>
+      <p class="hero-note">Free, 30 minutes, no pitch deck. We take on two new clinics a month, so if the diary is full we will tell you.</p>
     </div>
   </div>
 
@@ -568,15 +548,13 @@
 </section>
 
 <!-- ============ SPECIALITIES ============ -->
-<section class="section bg-base" id="specialities">
-  <div class="container container--text">
-    <div class="head" data-reveal-group style="margin-bottom:clamp(28px,4vw,46px)">
-      <div>
-        <h2 class="h2" data-reveal>Nineteen specialities, one discipline.</h2>
-      </div>
-      <div class="lead" data-reveal><p>We are not a plastic surgery agency. A vasectomy clinic and a rheumatology practice need the same thing a cosmetic surgeon does: to be the first name a patient finds.</p></div>
+<section class="band band-white" id="specialities">
+  <div class="wrap">
+    <div class="band-head rv" style="margin-bottom:clamp(28px,4vw,46px)">
+      <h2>Nineteen specialities, one discipline.</h2>
+      <p>We are not a plastic surgery agency. Since 2011 we have ranked clinics across almost every branch of medicine, dentistry and allied health, including a good number of practices nobody would call glamorous. A vasectomy clinic and a rheumatology practice need the same thing a cosmetic surgeon does: to be the first name a patient finds. Our London team runs the UK campaigns; the wider group works across five continents, which is why some of the evidence below is marked Australia.</p>
     </div>
-    <div class="spec-wrap" data-reveal>
+    <div class="spec-wrap rv">
       <div class="spec-media">
         <img src="/images/06-consultation.webp" alt="A clinician greeting a patient in a modern consulting room" loading="lazy">
         <p class="note" style="margin-top:30px"><span class="note-rule"></span>Nineteen specialities. One method that has not needed reinventing since 2011.</p>
@@ -612,10 +590,10 @@
 </section>
 
 <!-- ============ THE LETTER ============ -->
-<section class="section bg-base" id="problem">
-  <div class="container container--text">
+<section class="band band-white" id="problem">
+  <div class="wrap">
     <div class="letter">
-      <div class="letter-body" data-reveal>
+      <div class="letter-body rv">
         <p class="letter-meta">From the desk of Huyen Truong<b>London and Sydney, <span id="today"></span></b></p>
         <h2>You are very good at what you do. Google has no idea.</h2>
         <p style="margin-top:22px">Dear Clinic Owner,</p>
@@ -638,7 +616,7 @@
           <span>Founder and Search Marketing Director, Online Marketing For Doctors</span>
         </div>
       </div>
-      <aside class="letter-aside" data-reveal>
+      <aside class="letter-aside rv">
         <p class="eyebrow">Who we work with</p>
         <p class="who-intro">Twenty kinds of practice, one method. If yours is on this list we have ranked one like it. Open any tile for the rankings.</p>
         <ul class="who-grid">
@@ -669,13 +647,13 @@
 </section>
 
 <!-- ============ VANITY METRICS ============ -->
-<section class="section bg-base section--flush-top">
-  <div class="container">
+<section class="band band-white" style="padding-top:0">
+  <div class="wrap-wide">
     <div class="offset">
-      <div class="offset-media" data-reveal>
+      <div class="offset-media rv">
         <img src="/images/15-reports.webp" alt="A stack of printed marketing performance reports on a dark desk" loading="lazy">
       </div>
-      <div class="offset-panel" data-reveal>
+      <div class="offset-panel rv">
         <p class="eyebrow">What your last agency measured</p>
         <h2>You cannot put impressions in your appointment book.</h2>
         <p>Every agency report is engineered to look like progress. Impressions. Reach. Sessions. Average position. A chart that climbs and a number in bold.</p>
@@ -694,8 +672,8 @@
 </section>
 
 <!-- ============ STATS ============ -->
-<section class="bg-dark">
-  <div class="container" style="padding-inline:0">
+<section class="band band-dark" style="padding-block:0">
+  <div class="wrap-wide" style="padding-inline:0">
     <div class="figures">
       <div class="fig-lead">
         <b>385</b>
@@ -711,10 +689,10 @@
 </section>
 
 <!-- ============ TESTIMONIAL BREAK 1 ============ -->
-<section class="section tbreak">
+<section class="band tbreak">
   <div class="tbreak-bg"><img src="/images/03-harley-street.webp" alt="" loading="lazy"></div>
-  <div class="container container--text">
-    <blockquote class="tquote" data-reveal>
+  <div class="wrap">
+    <blockquote class="tquote rv">
       <p>I have seen an increase of almost 730% in the total number of leads that come to the clinic, and this also reflects on the total number of patients I have been operating on.</p>
       <cite><b>Mr Hazem Alfie</b>MBBCh, MSc, FRCS<br>Consultant Plastic Surgeon<br>Delta Clinics, Harley Street and Finchley, London</cite>
     </blockquote>
@@ -722,63 +700,46 @@
 </section>
 
 <!-- ============ PROCESS ============ -->
-<section class="section bg-base" id="process">
-  <div class="container container--text">
-    <div class="head" data-reveal-group>
-      <div>
-        <p class="eyebrow eyebrow--accent" data-reveal>The nine step high performance process</p>
-        <h2 class="h2" data-reveal>What we actually do, in the order we actually do it.</h2>
-      </div>
-      <div class="lead" data-reveal><p>No secret sauce, no black hat, nothing that puts your domain at risk. The same sequence since 2011, refined every time it met a new market.</p></div>
+<section class="band band-white" id="process">
+  <div class="wrap">
+    <div class="band-head rv">
+      <p class="eyebrow">The nine step high performance process</p>
+      <h2>What we actually do, in the order we actually do it.</h2>
+      <p>No secret sauce, no black hat, nothing that puts your domain at risk. This is the same sequence we have run for clinics since 2011, refined every time it met a new market.</p>
     </div>
   </div>
-  <div class="container">
-    <div class="proc-grid">
-      <ol class="proc" data-spine>
-        <span class="proc-thread" aria-hidden="true"><span class="proc-thread-fill" data-spine-fill></span></span>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">01</span><div class="proc-body"><h3 class="h3">Consultation</h3><p>We work out which treatment makes you the most money, which one you want to be known for, and who your ideal patient actually is. Everything downstream depends on getting this right.</p></div></li>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">02</span><div class="proc-body"><h3 class="h3">Technical audit</h3><p>A full crawl of the site. Speed, indexation, structure, duplicate content, the thin pages quietly dragging everything down. We find what is broken before we build anything on top of it.</p></div></li>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">03</span><div class="proc-body"><h3 class="h3">Conversion review</h3><p>Traffic to a site that does not convert is a bonfire. We review the journey from landing to enquiry and fix the leaks first, because doubling a 1% conversion rate is cheaper than doubling the traffic.</p></div></li>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">04</span><div class="proc-body"><h3 class="h3">Keyword research</h3><p>We map the terms real patients use, by treatment and by location, and separate the ones with commercial intent from the ones that only look impressive in a report.</p></div></li>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">05</span><div class="proc-body"><h3 class="h3">Competitor analysis</h3><p>What the clinic down the road ranks for and you do not. Which of their pages earn the traffic, where their links come from, and the gap you can take while they are not looking.</p></div></li>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">06</span><div class="proc-body"><h3 class="h3">On page optimisation</h3><p>Titles, structure, schema, internal linking, image handling, Core Web Vitals. The unglamorous work that decides whether Google trusts the site enough to rank it.</p></div></li>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">07</span><div class="proc-body"><h3 class="h3">Off page and links</h3><p>Placements on genuine health, lifestyle and news publications. One authoritative link beats a thousand cheap ones, and we have never used a private blog network. Not once.</p></div></li>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">08</span><div class="proc-body"><h3 class="h3">Content and local SEO</h3><p>Long form treatment pages written to E-E-A-T standards, plus Google Business Profiles restructured per location so your clinics rank in Maps instead of competing with each other.</p></div></li>
-        <li class="proc-item" data-reveal><span class="proc-num" aria-hidden="true">09</span><div class="proc-body"><h3 class="h3">Reporting</h3><p>Monthly, in plain English, measured against the benchmarks we set on day one. Enquiries and bookings first. You will always know what your money bought.</p></div></li>
-      </ol>
-      <figure class="proc-figure">
-        <div class="proc-sticky">
-          <div class="cover proc-img" data-img-reveal>
-            <img src="/images/10-corridor.webp" alt="A clinician walking a corridor in a private London clinic" loading="lazy">
-          </div>
-          <figcaption class="small proc-caption" data-reveal>Nine steps, in this order, every time. Reporting in plain English from month one.</figcaption>
-        </div>
-      </figure>
-    </div>
-  </div>
-  <div class="container">
-    <div class="proc-feature on-dark" data-reveal-group>
+  <div class="wrap-wide">
+    <div class="proc rv">
+      <div class="proc-item"><p class="proc-num">01</p><h3>Consultation</h3><p>We work out which treatment makes you the most money, which one you want to be known for, and who your ideal patient actually is. Everything downstream depends on getting this right.</p></div>
+      <div class="proc-item"><p class="proc-num">02</p><h3>Technical audit</h3><p>A full crawl of the site. Speed, indexation, structure, duplicate content, the thin pages quietly dragging everything down. We find what is broken before we build anything on top of it.</p></div>
+      <div class="proc-item"><p class="proc-num">03</p><h3>Conversion review</h3><p>Traffic to a site that does not convert is a bonfire. We review the journey from landing to enquiry and fix the leaks first, because doubling a 1% conversion rate is cheaper than doubling the traffic.</p></div>
+      <div class="proc-item"><p class="proc-num">04</p><h3>Keyword research</h3><p>We map the terms real patients use, by treatment and by location, and separate the ones with commercial intent from the ones that only look impressive in a report.</p></div>
+      <div class="proc-item"><p class="proc-num">05</p><h3>Competitor analysis</h3><p>What the clinic down the road ranks for and you do not. Which of their pages earn the traffic, where their links come from, and the gap you can take while they are not looking.</p></div>
+      <div class="proc-item"><p class="proc-num">06</p><h3>On page optimisation</h3><p>Titles, structure, schema, internal linking, image handling, Core Web Vitals. The unglamorous work that decides whether Google trusts the site enough to rank it.</p></div>
+      <div class="proc-item"><p class="proc-num">07</p><h3>Off page and links</h3><p>Placements on genuine health, lifestyle and news publications. One authoritative link beats a thousand cheap ones, and we have never used a private blog network. Not once.</p></div>
+      <div class="proc-item"><p class="proc-num">08</p><h3>Content and local SEO</h3><p>Long form treatment pages written to E-E-A-T standards, plus Google Business Profiles restructured per location so your clinics rank in Maps instead of competing with each other.</p></div>
+      <div class="proc-item"><p class="proc-num">09</p><h3>Reporting</h3><p>Monthly, in plain English, measured against the benchmarks we set on day one. Enquiries and bookings first. You will always know what your money bought.</p></div>
+      <div class="proc-feature">
         <img src="/images/11-strategy.webp" alt="A strategy session reviewing campaign performance" loading="lazy">
         <div class="proc-feature-txt">
-          <p class="eyebrow eyebrow--light" data-reveal>The part most agencies skip</p>
-          <h3 class="h3" data-reveal>We fix the conversion rate before we buy you a single extra visitor.</h3>
-          <p class="lead" data-reveal>It is the least exciting slide in any proposal and the one that makes the most money. When HR Plastic Surgery came to us the traffic was the smaller problem. We rebuilt the site around one treatment, lifted the conversion rate by 155%, and only then went after the rankings. The same sequence works just as well for a dental group or a chiropractic clinic.</p>
+          <p class="eyebrow">The part most agencies skip</p>
+          <h3>We fix the conversion rate before we buy you a single extra visitor.</h3>
+          <p>It is the least exciting slide in any proposal and the one that makes the most money. When HR Plastic Surgery came to us the traffic was the smaller problem. We rebuilt the site around one treatment, lifted the conversion rate by 155%, and only then went after the rankings. The same sequence works just as well for a dental group or a chiropractic clinic.</p>
         </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ SEO RESULTS ============ -->
-<section class="section bg-tint" id="results">
-  <div class="container container--text">
-    <div class="head" data-reveal-group>
-      <div>
-        <h2 class="h2" data-reveal>Real clinics. Real rankings. Nothing staged.</h2>
-      </div>
-      <div class="lead" data-reveal><p>Live search results for our clients, captured as they appeared. Not a mock up, not a projection, not a chart we drew ourselves. UK first, everything else labelled.</p></div>
+<section class="band band-grey" id="results">
+  <div class="wrap">
+    <div class="band-head rv">
+      <h2>Real clinics. Real rankings. Nothing staged.</h2>
+      <p>Pick a speciality. These are live search results for our clients, captured as they appeared. Not a mock up, not a projection, not a chart we drew ourselves. UK results are listed first and tagged; where we have stronger proof in a speciality from our Australian clinics, it is shown and labelled rather than hidden.</p>
     </div>
   </div>
-  <div class="container container--text">
+  <div class="wrap">
     <div class="tabs" role="tablist" aria-label="SEO results by industry" id="seoTabs"></div>
     <div class="slider">
       <div class="slides" id="seoSlides"></div>
@@ -794,17 +755,16 @@
 </section>
 
 <!-- ============ AI SEARCH ============ -->
-<section class="section bg-dark" id="ai-search" style="position:relative; overflow:clip">
+<section class="band band-dark" id="ai-search" style="position:relative; overflow:hidden">
   <div style="position:absolute; inset:0; z-index:0; opacity:.5">
     <img src="/images/19-network-texture.webp" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy">
   </div>
-  <div class="container container--text" style="position:relative; z-index:1">
-    <div class="head" data-reveal-group>
-      <div>
-        <p class="eyebrow eyebrow--light" data-reveal>AI search and answer engines</p>
-        <h2 class="h2" data-reveal>Your next patient may never see a search result at all.</h2>
-      </div>
-      <div class="lead" data-reveal><p>They are asking ChatGPT which clinic to use. They are reading the AI Overview at the top of Google and stopping there. If the answer lists five clinics in your city and you are not one of them, you did not lose the enquiry. You were never in the running. That holds whether they asked for a dentist, a dermatologist or a deep plane facelift.</p></div>
+  <div class="wrap" style="position:relative; z-index:1">
+    <div class="band-head rv">
+      <p class="eyebrow">AI search and answer engines</p>
+      <h2>Your next patient may never see a search result at all.</h2>
+      <p>They are asking ChatGPT which clinic to use. They are reading the AI Overview at the top of Google and stopping there. If the answer lists five clinics in your city and you are not one of them, you did not lose the enquiry. You were never in the running. That holds whether they asked for a dentist, a dermatologist or a deep plane facelift.</p>
+      <p style="margin-top:12px">We have been optimising for this since before it had a name. Here is what it looks like when it works.</p>
     </div>
     <div class="tabs" role="tablist" aria-label="AI search results by industry" id="aiTabs"></div>
     <div class="slider">
@@ -821,17 +781,15 @@
 </section>
 
 <!-- ============ CASE STUDIES ============ -->
-<section class="section bg-dark" id="cases">
-  <div class="container container--text">
-    <div class="head" data-reveal-group>
-      <div>
-        <p class="eyebrow eyebrow--light" data-reveal>Four UK cases first, then eight more</p>
-        <h2 class="h2" data-reveal>The organic search results, with the clinicians' names on them.</h2>
-      </div>
-      <div class="lead" data-reveal><p>The four UK cases come first, the rest labelled by country. Only the SEO figures are shown; where a campaign also ran paid or social, those numbers are left out.</p></div>
+<section class="band band-dark" id="cases">
+  <div class="wrap">
+    <div class="band-head rv">
+      <p class="eyebrow">Four UK cases first, then eight more</p>
+      <h2>The organic search results, with the clinicians' names on them.</h2>
+      <p>The four UK cases come first. The rest are from our Australian and international clinics and are labelled as such, because a dentist or a chiropractor deserves to see proof from their own speciality even when the nearest example is not on this island. Only the SEO figures are shown. Where a campaign also ran paid or social, those numbers have been left out.</p>
     </div>
   </div>
-  <div class="container container--text">
+  <div class="wrap">
     <div class="cs-nav" role="tablist" aria-label="Case studies">
       <button role="tab" aria-selected="true" data-cs="delta">Delta Clinics<em>Plastic surgery, London</em></button>
       <button role="tab" aria-selected="false" data-cs="bfc">British Face Clinic<em>Facial cosmetic, Harley St</em></button>
@@ -1150,16 +1108,14 @@
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
-<section class="section bg-base" id="proof">
-  <div class="container container--text">
-    <div class="head head--stack" data-reveal-group>
-      <div>
-        <h2 class="h2" data-reveal>Not one of these people was paid to say it.</h2>
-      </div>
+<section class="band band-white" id="proof">
+  <div class="wrap">
+    <div class="band-head rv">
+      <h2>Not one of these people was paid to say it.</h2>
     </div>
   </div>
-  <div class="container">
-    <div class="tset" data-reveal>
+  <div class="wrap-wide">
+    <div class="tset rv">
       <blockquote class="tlead">
         <p>They have methodically transformed my digital presence and my sales have gone through the roof. I have not been disappointed and to be honest, they have exceeded my expectations.</p>
         <cite><b>Dr Geoff Cashion</b>Owner, Vasectomy Australia</cite>
@@ -1176,8 +1132,8 @@
       </div>
     </div>
   </div>
-  <div class="container container--text" style="margin-top:clamp(34px,5vw,58px)">
-    <div class="cs-grid" data-reveal style="align-items:center">
+  <div class="wrap" style="margin-top:clamp(34px,5vw,58px)">
+    <div class="cs-grid rv" style="align-items:center">
       <div>
         <h3 style="margin-bottom:16px">Crown Clinic went from nine patients a week to twenty eight.</h3>
         <p style="color:#5C6663">James Nadin runs ICCM and Crown Clinic. He explains what changed, in his own words and without our help.</p>
@@ -1191,10 +1147,10 @@
 </section>
 
 <!-- ============ TESTIMONIAL BREAK 2 ============ -->
-<section class="section tbreak">
+<section class="band tbreak">
   <div class="tbreak-bg"><img src="/images/14-waiting-room.webp" alt="" loading="lazy"></div>
-  <div class="container container--text">
-    <blockquote class="tquote" data-reveal>
+  <div class="wrap">
+    <blockquote class="tquote rv">
       <p>We have gone from having 12 enquiries to anywhere from 50 to 100 enquiries in a month, while consistently filling our list times at the hospital.</p>
       <cite><b>Dr Michael Yunaev</b>Cosmetic Surgeon, Specialist Breast (Oncoplastic)</cite>
     </blockquote>
@@ -1202,15 +1158,15 @@
 </section>
 
 <!-- ============ COMPLIANCE ============ -->
-<section class="section bg-base">
-  <div class="container container--text">
+<section class="band band-white">
+  <div class="wrap">
     <div class="cs-grid" style="align-items:start">
-      <div data-reveal>
+      <div class="rv">
         <h2>Written to the rules from the first draft.</h2>
         <p style="color:#5C6663; margin-top:18px">Most agencies learn medical advertising rules the hard way, using your clinic as the classroom. We have worked under AHPRA, the GMC, the ASA and HIPAA since 2011, and the constraints are built into how we write rather than checked at the end.</p>
         <p style="color:#5C6663">It matters more than it sounds. A page that breaches guidance does not just get pulled. It takes its rankings with it, and rebuilding that authority takes months you cannot afford.</p>
       </div>
-      <div data-reveal>
+      <div class="rv">
         <figure style="margin:0 0 30px; box-shadow:var(--shadow-media)">
           <img src="/images/17-consultant-portrait.webp" alt="A consultant surgeon photographed in a modern clinic" loading="lazy">
         </figure>
@@ -1229,16 +1185,15 @@
 </section>
 
 <!-- ============ FIT ============ -->
-<section class="section bg-tint">
-  <div class="container container--text">
-    <div class="head" data-reveal-group>
-      <div>
-        <p class="eyebrow eyebrow--accent" data-reveal>Before you book</p>
-        <h2 class="h2" data-reveal>This is not for every clinic, and we would rather say so now.</h2>
-      </div>
-      <div class="lead" data-reveal><p>Two new clinics a month. Not a scarcity trick, just how many campaigns we can launch properly without the existing clients noticing.</p></div>
+<section class="band band-grey">
+  <div class="wrap">
+    <div class="band-head rv">
+      <p class="eyebrow">Before you book</p>
+      <h2>This is not for every clinic, and we would rather say so now.</h2>
+      <p>We take two new clinics a month. That is not a scarcity trick, it is how many campaigns our team can launch properly without the existing clients noticing. So the fit has to be right both ways.</p>
+      <p class="note" style="margin-top:30px"><span class="note-rule"></span>We would rather turn you away than take your money and miss.</p>
     </div>
-    <div class="fit" data-reveal>
+    <div class="fit rv">
       <div class="fit-col fit-yes">
         <h3>Worth a conversation if</h3>
         <ul>
@@ -1262,15 +1217,13 @@
 </section>
 
 <!-- ============ FAQ ============ -->
-<section class="section bg-base" id="faq">
-  <div class="container container--text">
-    <div class="head head--stack" data-reveal-group>
-      <div>
-        <p class="eyebrow eyebrow--accent" data-reveal>Frequently asked</p>
-        <h2 class="h2" data-reveal>The questions everyone asks on the call.</h2>
-      </div>
+<section class="band band-white" id="faq">
+  <div class="wrap">
+    <div class="band-head rv">
+      <span class="script">FAQ</span>
+      <h2 style="margin-top:6px">The questions everyone asks on the call.</h2>
     </div>
-    <div class="faq" data-reveal>
+    <div class="faq rv">
       <details open><summary>How long before I see anything?</summary><div class="faq-a">
         <p>It depends where you are starting. If the site has some history and authority, movement usually shows in the first three months and meaningful enquiry growth from month four onwards. If we are building from nothing, the infrastructure alone takes the first couple of months before rankings start to respond.</p>
         <p>Anybody quoting you a faster timeline is either guessing or selling something they cannot deliver.</p></div></details>
@@ -1300,13 +1253,13 @@
 </section>
 
 <!-- ============ BOOKING ============ -->
-<section class="section bg-dark" id="book" style="position:relative; overflow:clip">
+<section class="band band-dark" id="book" style="position:relative; overflow:hidden">
   <div style="position:absolute; inset:0; z-index:0; opacity:.22">
     <img src="/images/13-london-dusk.webp" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy">
   </div>
-  <div class="container container--text" style="position:relative; z-index:1">
+  <div class="wrap" style="position:relative; z-index:1">
     <div class="book">
-      <div data-reveal>
+      <div class="rv">
         <h2>Thirty minutes. No deck, no junior with a headset.</h2>
         <p style="margin-top:18px">You will speak to someone who has run campaigns in your speciality, whichever one that is. Before the call we look at your site, your rankings and the two or three clinics taking the searches you should be getting.</p>
         <ul class="book-list">
@@ -1318,7 +1271,7 @@
         <p style="margin-top:26px; font-size:15.5px; color:#9AA5A2">We take on two new clinics a month. If this month is full we will tell you on the call rather than after the invoice.</p>
         <p style="margin-top:20px"><a class="hdr-tel" style="font-size:21px" href="tel:+442045722823">+44 20 4572 2823</a></p>
       </div>
-      <div data-reveal>
+      <div class="rv">
         <div class="book-embed">
           <iframe id="bookingFrame" src="https://api.leadconnectorhq.com/widget/booking/ZUr6RUuzDbySvoYkMU4m"
             title="Book a free strategy call with Online Marketing For Doctors" scrolling="no" loading="lazy"></iframe>
@@ -1335,7 +1288,7 @@
 
 <!-- ============ FOOTER ============ -->
 <footer class="ftr">
-  <div class="container container--text">
+  <div class="wrap">
     <div class="ftr-in">
       <div>
         <img src="/brand/logo-omd-white.svg" alt="Online Marketing For Doctors">
